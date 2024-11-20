@@ -10,6 +10,7 @@
     --text-title-color : #013a5b;
     --white-text : #fff;
     --light-bg : #FFE8CF;
+    --sticky-footer-color: #264658;
 
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -141,7 +142,7 @@
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--dark) !important;
+    color:var(--white-text) !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -195,7 +196,11 @@
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: var(--light-bg);
+        /* background: var(--light-bg); */
+        /* background: var(--text-title-color); */
+        background: var(--sticky-footer-color);
+        box-shadow:  0 4px 6px -1px rgba(0, 0, 0, .5);
+        
     }
 
     .navbar-light .navbar-nav .nav-link::before {
@@ -241,6 +246,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 65vh;
+    border-bottom-left-radius: 20px; /* الزاوية اليسرى السفلية */
+    border-bottom-right-radius: 20px; /* الزاوية اليمنى السفلية */
+    overflow: hidden
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -259,6 +267,7 @@
 }
 .icon-home-title {
     border-bottom: .5px dashed var(--white-text);
+    font-size: 15px;
 }
 .icon-home-title-1::after {
     /* content: "|";
@@ -628,7 +637,7 @@
 /*** Footer ***/
 
 .footer {
-    background-color: var(--text-title-color) ;
+    background-color: var(--sticky-footer-color) ;
 }
 .footer .btn.btn-social {
     margin-right: 5px;
