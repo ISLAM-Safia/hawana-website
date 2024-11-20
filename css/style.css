@@ -10,7 +10,7 @@
     --text-title-color : #013a5b;
     --white-text : #fff;
     --light-bg : #FFE8CF;
-    --sticky-footer-color: #264658;
+    --sticky-footer-color: #023756;
 
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -248,7 +248,8 @@
     height: 65vh;
     border-bottom-left-radius: 20px; /* الزاوية اليسرى السفلية */
     border-bottom-right-radius: 20px; /* الزاوية اليمنى السفلية */
-    overflow: hidden
+    overflow: hidden;
+    box-shadow:  0 4px 6px -1px rgba(0, 0, 0, .5);
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
