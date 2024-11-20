@@ -45,7 +45,7 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+    <div class="container-fluid hawana-info-home px-5 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
@@ -80,7 +80,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Tourism Programs</a>
+                    <li><a href="index.html" class="nav-item nav-link active">Tourism Programs</a></li>
+                    
                     <a href="index.html" class="nav-item nav-link ">Hotels</a>
                     <a href="about.html" class="nav-item nav-link">Flights</a>
                     <a href="service.html" class="nav-item nav-link">Trains</a>
@@ -148,28 +149,103 @@
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-hotels" role="tabpanel">
                                 <form class="row g-3">
-                                    <div class="col-md-4">
+                                    <div class=" custom-col-3-5 d-flex flex-column justify-content-start align-items-start" >
                                         <label for="destination" class="form-label">Destination</label>
-                                        <input type="text" class="form-control" id="destination" placeholder="City, airport, region...">
+                                        <input type="text" class="form-control form-control-focus2" id="destination" placeholder="City, airport, region, landmark">
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 d-flex flex-column justify-content-start align-items-start">
                                         <label for="checkin" class="form-label">Check-in</label>
-                                        <input type="date" class="form-control" id="checkin">
+                                        <input type="date" class="form-control form-control-focus2" id="checkin">
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 d-flex flex-column justify-content-start align-items-start">
                                         <label for="checkout" class="form-label">Check-out</label>
-                                        <input type="date" class="form-control" id="checkout">
+                                        <input type="date" class="form-control form-control-focus2" id="checkout">
                                     </div>
-                                    <div class="col-md-3">
+
+                                    <div class="col-md-3 d-flex flex-column justify-content-start align-items-start">
+                                        <label for="guests" class="form-label">Rooms and Guests</label>
+                                        <!-- <button class=" room-input-dp btn  dropdown-toggle w-100 form-control-focus2" id="guestsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                            1 room, 1 adult, 0 children
+                                        </button> -->
+                                        <div class="dropdown">
+                                            <button class="room-input-dp btn dropdown-toggle w-100 form-control-focus2" id="guestsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                1 room, 1 adult, 0 children
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <div class="counter-row">
+                                                    <span>Rooms</span>
+                                                    <div class="counter-buttons">
+                                                        <button id="rooms-minus">−</button>
+                                                        <span class="counter-value" id="rooms">1</span>
+                                                        <button id="rooms-plus">+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="counter-row">
+                                                    <span>Adults <small>(18+ yrs)</small></span>
+                                                    <div class="counter-buttons">
+                                                        <button id="adults-minus">−</button>
+                                                        <span class="counter-value" id="adults">1</span>
+                                                        <button id="adults-plus">+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="counter-row">
+                                                    <span>Children <small>(0-17 yrs)</small></span>
+                                                    <div class="counter-buttons">
+                                                        <button id="children-minus" disabled>−</button>
+                                                        <span class="counter-value" id="children">0</span>
+                                                        <button id="children-plus">+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-done-wraper">
+                                                <button class=" done-btn" onclick="updateDropdownText()">Done</button></div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <!-- <div class="dropdown">
+                                            <button class="  room-input-dp btn  dropdown-toggle w-100 form-control-focus2 " id="guestsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                1 room, 1 adult , 0 children
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <div class="counter-row">
+                                                    <span>Rooms</span>
+                                                    <div class="counter-buttons">
+                                                        <button id="rooms-minus" onclick="updateCounter('rooms', -1)">−</button>
+                                                        <span class="counter-value" id="rooms">1</span>
+                                                        <button id="rooms-plus" onclick="updateCounter('rooms', 1)">+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="counter-row">
+                                                    <span>Adults <small>(18+ yrs)</small></span>
+                                                    <div class="counter-buttons">
+                                                        <button id="adults-minus" onclick="updateCounter('adults', -1)">−</button>
+                                                        <span class="counter-value" id="adults">1</span>
+                                                        <button id="adults-plus" onclick="updateCounter('adults', 1)">+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="counter-row">
+                                                    <span>Children <small>(0-17 yrs)</small></span>
+                                                    <div class="counter-buttons">
+                                                        <button id="children-minus" onclick="updateCounter('children', -1)" disabled>−</button>
+                                                        <span class="counter-value" id="children">0</span>
+                                                        <button id="children-plus" onclick="updateCounter('children', 1)">+</button>
+                                                    </div>
+                                                </div>
+                                                <button class="done-btn" onclick="updateDropdownText()">Done</button>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                    <!-- <div class="col-md-3">
                                         <label for="guests" class="form-label">Rooms and Guests</label>
                                         <select class="form-select" id="guests">
                                             <option value="1">1 room, 1 adult</option>
                                             <option value="2">1 room, 2 adults</option>
                                             <option value="3">2 rooms, 4 adults</option>
                                         </select>
-                                    </div>
-                                    <div class="col-md-1 d-flex align-items-end">
-                                        <button type="submit" class="btn btn-search">Search</button>
+                                    </div> -->
+                                    <div class="col-md-1 d-flex align-items-end ">
+                                        <button type="submit" class="btn btn-search d-flex align-items-center gap-1"> <i class="fa-solid fa-magnifying-glass"></i> Search</button>
                                     </div>
                                 </form>
                             </div>

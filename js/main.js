@@ -13,7 +13,96 @@
     };
     spinner();
     
-    
+
+
+
+
+
+
+    // reservation 
+ // Reservation - Updating counters
+ const counters = {
+    rooms: 1,
+    adults: 1,
+    children: 0
+};
+
+function updateCounter(type, change, event) {
+    // Prevent default behavior
+    event.preventDefault();
+
+    const value = counters[type] + change;
+
+    // Ensure values do not go below minimum
+    if ((type === 'rooms' || type === 'adults') && value < 1) return;
+    if (type === 'children' && value < 0) return;
+
+    counters[type] = value;
+
+    // Update the text inside the element
+    document.getElementById(type).innerText = counters[type];
+
+    // Disable buttons if the minimum limit is reached
+    document.getElementById(`${type}-minus`).disabled = counters[type] === (type === 'children' ? 0 : 1);
+
+    // Update the dropdown button text immediately
+    updateDropdownText();
+}
+
+function updateDropdownText() {
+    const rooms = counters.rooms;
+    const adults = counters.adults;
+    const children = counters.children;
+
+    // تأكد من عرض 0 children إذا لم يكن هناك أطفال
+    const childrenText = children > 0 ? `${children} child${children > 1 ? 'ren' : ''}` : "0 children";
+
+    // تحديد النص الذي سيظهر في البوتون
+    const dropdownButton = document.getElementById('guestsDropdown');
+    dropdownButton.innerText = `${rooms} room${rooms > 1 ? 's' : ''}, ${adults} adult${adults > 1 ? 's' : ''}, ${childrenText}`;
+}
+
+
+// Add event listeners for buttons
+document.getElementById('rooms-plus').addEventListener('click', function (event) {
+    updateCounter('rooms', 1, event);
+});
+
+document.getElementById('rooms-minus').addEventListener('click', function (event) {
+    updateCounter('rooms', -1, event);
+});
+
+document.getElementById('adults-plus').addEventListener('click', function (event) {
+    updateCounter('adults', 1, event);
+});
+
+document.getElementById('adults-minus').addEventListener('click', function (event) {
+    updateCounter('adults', -1, event);
+});
+
+document.getElementById('children-plus').addEventListener('click', function (event) {
+    updateCounter('children', 1, event);
+});
+
+document.getElementById('children-minus').addEventListener('click', function (event) {
+    updateCounter('children', -1, event);
+});
+
+// Update dropdown text when the "Done" button is clicked
+document.querySelector('.done-btn').addEventListener('click', function (event) {
+    updateDropdownText();
+});
+
+
+
+
+
+
+
+
+
+
+    // 
     // Initiate the wowjs
     new WOW().init();
 

@@ -122,7 +122,10 @@
     border-radius: 0px;
 }
 
-
+.hawana-info-home {
+    background-color: var(--text-title-color);
+    color: var(--white-text);
+}
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Nunito', sans-serif;
@@ -155,7 +158,7 @@
     max-height: 45px;
 }
 .dropdown-menu.show {
-    background-color: var(--light-bg);
+    /* background-color: var(--light-bg); */
 }
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
@@ -300,6 +303,10 @@
     border-radius: 8px;
     padding: 10px 20px;
 } 
+.custom-col-3-5 {
+    flex: 0 0 30%; /* 3.5 / 12 = 0.291667 */
+    max-width: 29.1667%;
+}
 .nav-item  button{
     border-radius: 32px;
 }
@@ -344,6 +351,93 @@
 }
 .fa-arrow-right:before {
     color: var(--primary);
+}
+
+/* reservation section starts */
+.form-label {
+    padding-left: 4px;
+    text-align: start !important;
+}
+.room-input-dp  {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    line-height: 1.5;
+    transition: border 0.01s linear;
+}
+.room-input-dp:focus{
+    border: none;
+    outline: none;
+
+}
+.form-control-focus2:focus{
+    outline: none;
+    border: 2px solid var(--text-title-color);
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.counter-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.counter-row span {
+    font-size: 14px;
+}
+
+.counter-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.counter-buttons button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0056b3;
+    background: #fff;
+    color: #0056b3;
+    font-size: 16px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.counter-buttons button:disabled {
+    color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+
+.counter-value {
+    width: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+.btn-done-wraper {
+    display: flex;
+    justify-content: end;
+}
+.done-btn {
+    width: fit-content;
+    background-color: var(--text-title-color);
+    color: var(--white-text);
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    padding: 5px 15px;
+    margin-top: 26px;
 }
 
  /* second section */
