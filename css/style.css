@@ -367,6 +367,7 @@
 .form-label {
     padding-left: 4px;
     text-align: start !important;
+    margin-bottom: 0 !important;
 }
 .room-input-dp  {
     background-color: #fff;
@@ -447,7 +448,6 @@
     cursor: pointer;
     display: flex;
     padding: 5px 15px;
-    margin-top: 26px;
 }
 
  /* second section */

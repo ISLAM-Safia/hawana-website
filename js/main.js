@@ -24,37 +24,48 @@
  const counters = {
     rooms: 1,
     adults: 1,
-    children: 0
+    children: 0,
 };
 
+// تحديث القيم
 function updateCounter(type, change, event) {
-    // Prevent default behavior
+    // منع السلوك الافتراضي
     event.preventDefault();
 
     const value = counters[type] + change;
 
-    // Ensure values do not go below minimum
+    // التأكد من أن القيم لا تنخفض عن الحد الأدنى أو تزيد عن الحد الأقصى
     if ((type === 'rooms' || type === 'adults') && value < 1) return;
-    if (type === 'children' && value < 0) return;
+    if (type === 'children') {
+        if (value < 0) return; // الحد الأدنى للأطفال
+        if (value > 10) return; // الحد الأقصى للأطفال
+    }
 
     counters[type] = value;
 
-    // Update the text inside the element
+    // تحديث النص داخل العنصر
     document.getElementById(type).innerText = counters[type];
 
-    // Disable buttons if the minimum limit is reached
+    // تعطيل الأزرار إذا تم الوصول للحد الأدنى أو الأقصى
     document.getElementById(`${type}-minus`).disabled = counters[type] === (type === 'children' ? 0 : 1);
+    if (type === 'children') {
+        document.getElementById(`${type}-plus`).disabled = counters[type] === 10;
+    }
 
-    // Update the dropdown button text immediately
+    // تحديث حقول أعمار الأطفال إذا تغير عددهم
+    if (type === 'children') updateChildrenAges();
+
+    // تحديث النص في البوتون مباشرة
     updateDropdownText();
 }
 
+// تحديث النص الظاهر في البوتون الرئيسي
 function updateDropdownText() {
     const rooms = counters.rooms;
     const adults = counters.adults;
     const children = counters.children;
 
-    // تأكد من عرض 0 children إذا لم يكن هناك أطفال
+    // التأكد من عرض 0 children إذا لم يكن هناك أطفال
     const childrenText = children > 0 ? `${children} child${children > 1 ? 'ren' : ''}` : "0 children";
 
     // تحديد النص الذي سيظهر في البوتون
@@ -62,8 +73,28 @@ function updateDropdownText() {
     dropdownButton.innerText = `${rooms} room${rooms > 1 ? 's' : ''}, ${adults} adult${adults > 1 ? 's' : ''}, ${childrenText}`;
 }
 
+// تحديث حقول أعمار الأطفال
+function updateChildrenAges() {
+    const childrenCount = counters.children;
+    const childrenAgesContainer = document.getElementById('children-ages');
 
-// Add event listeners for buttons
+    // إظهار أو إخفاء الحاوية بناءً على عدد الأطفال
+    childrenAgesContainer.style.display = childrenCount > 0 ? 'block' : 'none';
+
+    // إعادة تعيين الحقول عند تغيير العدد
+    childrenAgesContainer.innerHTML = '';
+    for (let i = 0; i < childrenCount; i++) {
+        const ageSelect = document.createElement('select');
+        ageSelect.className = 'form-select mb-2';
+        ageSelect.innerHTML = '<option value="" disabled selected>Select age</option>';
+        for (let age = 1; age <= 12; age++) {
+            ageSelect.innerHTML += `<option value="${age}">${age} year${age > 1 ? 's' : ''}</option>`;
+        }
+        childrenAgesContainer.appendChild(ageSelect);
+    }
+}
+
+// إضافة الأحداث للأزرار
 document.getElementById('rooms-plus').addEventListener('click', function (event) {
     updateCounter('rooms', 1, event);
 });
@@ -88,12 +119,10 @@ document.getElementById('children-minus').addEventListener('click', function (ev
     updateCounter('children', -1, event);
 });
 
-// Update dropdown text when the "Done" button is clicked
+// تحديث النص عند النقر على زر "Done"
 document.querySelector('.done-btn').addEventListener('click', function (event) {
     updateDropdownText();
 });
-
-
 
 
 

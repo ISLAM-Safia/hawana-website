@@ -178,7 +178,47 @@
                                         <!-- <button class=" room-input-dp btn  dropdown-toggle w-100 form-control-focus2" id="guestsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                             1 room, 1 adult, 0 children
                                         </button> -->
+
                                         <div class="dropdown">
+                                            <button class="room-input-dp btn dropdown-toggle w-100 form-control-focus2" id="guestsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                1 room, 1 adult, 0 children
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <div class="counter-row">
+                                                    <span>Rooms</span>
+                                                    <div class="counter-buttons">
+                                                        <button id="rooms-minus">−</button>
+                                                        <span class="counter-value" id="rooms">1</span>
+                                                        <button id="rooms-plus">+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="counter-row">
+                                                    <span>Adults <small>(18+ yrs)</small></span>
+                                                    <div class="counter-buttons">
+                                                        <button id="adults-minus">−</button>
+                                                        <span class="counter-value" id="adults">1</span>
+                                                        <button id="adults-plus">+</button>
+                                                    </div>
+                                                </div>
+                                                <div class="counter-row">
+                                                    <span>Children <small>(0-12 yrs)</small></span>
+                                                    <div class="counter-buttons">
+                                                        <button id="children-minus">−</button>
+                                                        <span class="counter-value" id="children">0</span>
+                                                        <button id="children-plus">+</button>
+                                                    </div>
+                                                </div>
+                                                <div id="children-ages" class="children-ages mt-3" style="display: none;">
+                                                    <!-- عمر الطفل سيتم إضافته ديناميكياً هنا -->
+                                                </div>
+                                                <div class="btn-done-wraper">
+                                                    <button class="done-btn" onclick="updateDropdownText()">Done</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+
+                                        <!-- <div class="dropdown">
                                             <button class="room-input-dp btn dropdown-toggle w-100 form-control-focus2" id="guestsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                                 1 room, 1 adult, 0 children
                                             </button>
@@ -210,7 +250,7 @@
                                                 <div class="btn-done-wraper">
                                                 <button class=" done-btn" onclick="updateDropdownText()">Done</button></div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         
                                         
                                         
@@ -367,42 +407,6 @@
                 <h1 class="mb-5">Our Services</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="services-icon fa fa-3x fa-globe  mb-4"></i>
-                            <h5>WorldWide Tours</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="services-icon fa fa-3x fa-hotel  mb-4"></i>
-                            <h5>Hotel Reservation</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="services-icon fa fa-3x fa-user  mb-4"></i>
-                            <h5>Travel Guides</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item rounded pt-3">
-                        <div class="p-4">
-                            <i class="services-icon fa fa-3x fa-cog  mb-4"></i>
-                            <h5>Event Management</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded pt-3">
                         <div class="p-4">
