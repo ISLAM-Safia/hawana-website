@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Dropdown Buttons</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .dropdown-menu {
+      padding: 15px;
+      width: 300px;
+    }
+    .counter-control {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+    }
+    .counter-control span {
+      font-weight: bold;
+    }
+    .counter-btn {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      cursor: pointer;
+      user-select: none;
+    }
+    .counter-btn:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Multiple Dropdown Buttons</h1>
+
+    <!-- الزر الأول -->
+    <div class="dropdown mb-3">
+      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        1 room, 2 adults, 0 children
+      </button>
+      <div class="dropdown-menu" onclick="preventClose(event)">
+        <div class="counter-control">
+          <span>Rooms</span>
+          <div>
+            <span class="counter-btn" onclick="updateCounter('rooms1', -1, 'dropdownButton1')">−</span>
+            <span id="rooms1" class="mx-2">1</span>
+            <span class="counter-btn" onclick="updateCounter('rooms1', 1, 'dropdownButton1')">+</span>
+          </div>
+        </div>
+        <div class="counter-control">
+          <span>Adults <small>(18+ yrs)</small></span>
+          <div>
+            <span class="counter-btn" onclick="updateCounter('adults1', -1, 'dropdownButton1')">−</span>
+            <span id="adults1" class="mx-2">2</span>
+            <span class="counter-btn" onclick="updateCounter('adults1', 1, 'dropdownButton1')">+</span>
+          </div>
+        </div>
+        <div class="counter-control">
+          <span>Children <small>(0-17 yrs)</small></span>
+          <div>
+            <span class="counter-btn" onclick="updateCounter('children1', -1, 'dropdownButton1')">−</span>
+            <span id="children1" class="mx-2">0</span>
+            <span class="counter-btn" onclick="updateCounter('children1', 1, 'dropdownButton1')">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- الزر الثاني -->
+    <div class="dropdown mb-3">
+      <button class="btn btn-success dropdown-toggle" type="button" id="dropdownButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        1 room, 2 adults, 0 children
+      </button>
+      <div class="dropdown-menu" onclick="preventClose(event)">
+        <div class="counter-control">
+          <span>Rooms</span>
+          <div>
+            <span class="counter-btn" onclick="updateCounter('rooms2', -1, 'dropdownButton2')">−</span>
+            <span id="rooms2" class="mx-2">1</span>
+            <span class="counter-btn" onclick="updateCounter('rooms2', 1, 'dropdownButton2')">+</span>
+          </div>
+        </div>
+        <div class="counter-control">
+          <span>Adults <small>(18+ yrs)</small></span>
+          <div>
+            <span class="counter-btn" onclick="updateCounter('adults2', -1, 'dropdownButton2')">−</span>
+            <span id="adults2" class="mx-2">2</span>
+            <span class="counter-btn" onclick="updateCounter('adults2', 1, 'dropdownButton2')">+</span>
+          </div>
+        </div>
+        <div class="counter-control">
+          <span>Children <small>(0-17 yrs)</small></span>
+          <div>
+            <span class="counter-btn" onclick="updateCounter('children2', -1, 'dropdownButton2')">−</span>
+            <span id="children2" class="mx-2">0</span>
+            <span class="counter-btn" onclick="updateCounter('children2', 1, 'dropdownButton2')">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // منع إغلاق القائمة عند التفاعل داخلها
+    function preventClose(event) {
+      event.stopPropagation();
+    }
+
+    // تحديث العداد والنص الخاص بالزر
+    function updateCounter(id, increment, buttonId) {
+      const counter = document.getElementById(id);
+      let value = parseInt(counter.textContent);
+      value += increment;
+
+      // شروط لمنع القيم السالبة
+      if (id.includes("rooms") && value < 1) value = 1;
+      if (id.includes("adults") && value < 1) value = 1;
+      if (id.includes("children") && value < 0) value = 0;
+
+      counter.textContent = value;
+
+      // تحديث نص الزر
+      updateButtonText(buttonId);
+    }
+
+    // تحديث نص الزر بناءً على القيم
+    function updateButtonText(buttonId) {
+      const rooms = document.getElementById(buttonId.replace("dropdownButton", "rooms")).textContent;
+      const adults = document.getElementById(buttonId.replace("dropdownButton", "adults")).textContent;
+      const children = document.getElementById(buttonId.replace("dropdownButton", "children")).textContent;
+
+      const button = document.getElementById(buttonId);
+      button.textContent = `${rooms} room${rooms > 1 ? "s" : ""}, ${adults} adult${adults > 1 ? "s" : ""}, ${children} child${children > 1 ? "ren" : ""}`;
+    }
+  </script>
+</body>
+</html>

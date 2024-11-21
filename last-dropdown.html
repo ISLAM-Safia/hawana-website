@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trip Type Selection</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Select Your Trip Type</h1>
+
+    <!-- Trip Type Options (Round-trip, One-way, Multi-city) -->
+    <div class="d-flex justify-content-between">
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="tripType" id="roundTrip" value="Round-trip" checked>
+        <label class="form-check-label" for="roundTrip">Round-trip</label>
+      </div>
+      
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="tripType" id="oneWay" value="One-way">
+        <label class="form-check-label" for="oneWay">One-way</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="tripType" id="multiCity" value="Multi-city">
+        <label class="form-check-label" for="multiCity">Multi-city</label>
+      </div>
+    </div>
+
+    <!-- Placeholder for the text output -->
+    <div id="tripTypeText" class="mt-4">
+      <!-- محتوى ديناميكي حسب الاختيار -->
+      <div id="roundTripContent" class="text-primary">
+        <label for="roundTripInput" class="form-label">Enter Return Date:</label>
+        <input type="date" id="roundTripInput" class="form-control">
+      </div>
+      <div id="oneWayContent" class="text-primary d-none">
+        <label for="oneWayInput" class="form-label">Enter Departure Date:</label>
+        <input type="date" id="oneWayInput" class="form-control">
+      </div>
+      <div id="multiCityContent" class="text-primary d-none">
+        <label for="multiCityInput" class="form-label">Enter Destination Details:</label>
+        <input type="text" id="multiCityInput" class="form-control" placeholder="Enter multiple destinations">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // مرجع لعناصر الراديو والنصوص
+    const roundTrip = document.getElementById('roundTrip');
+    const oneWay = document.getElementById('oneWay');
+    const multiCity = document.getElementById('multiCity');
+    const roundTripContent = document.getElementById('roundTripContent');
+    const oneWayContent = document.getElementById('oneWayContent');
+    const multiCityContent = document.getElementById('multiCityContent');
+
+    // تحديث المحتوى بناءً على الاختيار
+    function updateTripTypeContent() {
+      // إخفاء جميع المحتويات
+      roundTripContent.classList.add('d-none');
+      oneWayContent.classList.add('d-none');
+      multiCityContent.classList.add('d-none');
+
+      // عرض المحتوى المناسب
+      if (roundTrip.checked) {
+        roundTripContent.classList.remove('d-none');
+      } else if (oneWay.checked) {
+        oneWayContent.classList.remove('d-none');
+      } else if (multiCity.checked) {
+        multiCityContent.classList.remove('d-none');
+      }
+    }
+
+    // إضافة مستمعي الأحداث
+    roundTrip.addEventListener('change', updateTripTypeContent);
+    oneWay.addEventListener('change', updateTripTypeContent);
+    multiCity.addEventListener('change', updateTripTypeContent);
+
+    // عرض النص الافتراضي عند التحميل
+    updateTripTypeContent();
+  </script>
+</body>
+</html>

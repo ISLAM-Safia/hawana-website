@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/logo-img.jpg" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,9 +110,9 @@
 
             </div>
         </div>
-        <div class="container-fluid row justify-content-center " style="margin-top: -12rem;">
+        <div class="container-fluid row justify-content-center " style="margin-top: -7rem;">
             <div class="col-lg-10   text-center">
-                <h1 class="display-6 text-white animated slideInDown">Enjoy Your Vacation With Us</h1>
+                <h1 class=" text-white animated slideInDown">Enjoy Your Vacation With Us</h1>
                 <div class="container text-center ">
                      <div class="icon-home-wraper d-flex justify-content-center">
                         <div class="icon-home">
@@ -144,11 +144,12 @@
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-flights-tab" data-bs-toggle="pill" data-bs-target="#pills-flights" type="button" role="tab"> <i class="fa-solid fa-plane me-2"></i>Flights</button>
+                            </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link " id="pills-hotels-tab" data-bs-toggle="pill" data-bs-target="#pills-hotels" type="button" role="tab" > <i class="fa-solid fa-train-tram me-2"></i>Trains</button>
+                                    <button class="nav-link " id="pills-trains-tab" data-bs-toggle="pill" data-bs-target="#pills-trains" type="button" role="tab" > <i class="fa-solid fa-train-tram me-2"></i>Trains</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link " id="pills-hotels-tab" data-bs-toggle="pill" data-bs-target="#pills-hotels" type="button" role="tab" >  <i class="fa-solid fa-hotel me-2"></i>Hotels</button>
+                                    <button class="nav-link " id="pills-cars-tab" data-bs-toggle="pill" data-bs-target="#pills-cars" type="button" role="tab" >  <i class="fa-solid fa-hotel me-2"></i>Cars</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link " id="pills-hotels-tab" data-bs-toggle="pill" data-bs-target="#pills-hotels" type="button" role="tab" >  <i class="fa-solid fa-hotel me-2"></i>Hotels</button>
@@ -178,8 +179,8 @@
                                         <!-- <button class=" room-input-dp btn  dropdown-toggle w-100 form-control-focus2" id="guestsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                             1 room, 1 adult, 0 children
                                         </button> -->
-
-                                        <div class="dropdown">
+                                        <div id="dropdownLocation1" class="dropdown-wrapper"></div>
+                                        <!-- <div class="dropdown">
                                             <button class="room-input-dp btn dropdown-toggle w-100 form-control-focus2" id="guestsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                                 1 room, 1 adult, 0 children
                                             </button>
@@ -209,14 +210,14 @@
                                                     </div>
                                                 </div>
                                                 <div id="children-ages" class="children-ages mt-3" style="display: none;">
-                                                    <!-- عمر الطفل سيتم إضافته ديناميكياً هنا -->
+                                                  
                                                 </div>
                                                 <div class="btn-done-wraper">
                                                     <button class="done-btn" onclick="updateDropdownText()">Done</button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        
+                                        </div> -->
+                                    </div>
 
                                         <!-- <div class="dropdown">
                                             <button class="room-input-dp btn dropdown-toggle w-100 form-control-focus2" id="guestsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -286,7 +287,7 @@
                                                 <button class="done-btn" onclick="updateDropdownText()">Done</button>
                                             </div>
                                         </div> -->
-                                    </div>
+                                    
                                     <!-- <div class="col-md-3">
                                         <label for="guests" class="form-label">Rooms and Guests</label>
                                         <select class="form-select" id="guests">
@@ -301,12 +302,297 @@
                                 </form>
                             </div>
                             <div class="tab-pane fade" id="pills-flights" role="tabpanel">
-                                <p>Flight booking form here...</p>
+<!-- ************************ -->
+
+                                <div class="container-fluid no-pdd">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-md-5 d-flex justify-content-start">
+                                            <!-- Trip Type Options (Round-trip, One-way, Multi-city) -->
+                                            <div class="d-flex justify-content-between">
+
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="tripType" id="roundTrip" value="Round-trip" checked>
+                                                    <label class="form-check-label" for="roundTrip">Round-trip</label>
+                                                </div>
+
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="tripType" id="oneWay" value="One-way">
+                                                    <label class="form-check-label" for="oneWay">One-way</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="tripType" id="multiCity" value="Multi-city">
+                                                    <label class="form-check-label" for="multiCity">Multi-city</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Nonstop Checkbox at the end of the row -->
+                                        <div class="col-md-2 d-flex align-items-center justify-content-end">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="nonStopCheck">
+                                                <label class="form-check-label" for="nonStopCheck">Nonstop only</label>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                    <div id="tripTypeText" class="mt-4">
+                                        <!-- محتوى ديناميكي حسب الاختيار -->
+                                        <div id="roundTripContent" class="">
+
+
+
+                                            <div class="container-fluid  rounded-trip no-pdd mt-4">
+                                                <div class="d-flex-custom gap-1">
+                                                    <div class="col-md-3 text-start">
+                                                        <label for="fromLocation" class="form-label">Leaving from</label>
+                                                        <input type="text" class="form-control form-control-focus2" id="fromLocation" placeholder="Hong Kong, All airports">
+                                                    </div>
+                                                    <div class="col-md-3 text-start">
+                                                        <label for="toLocation" class="form-label">Going to</label>
+                                                        <input type="text" class="form-control form-control-focus2" id="toLocation" placeholder="Enter destination">
+                                                    </div>
+                                
+                                
+                                                    <div class="col-md-1-5 text-start">
+                                                        <label for="departureDate" class="form-label ">Depart</label>
+                                                        <input type="date" class="form-control form-control-focus2" id="departureDate">
+                                                    </div>
+                                            
+                                                    <!-- العمود الثاني (Return) مع عرض 12.5% -->
+                                                    <div class="col-md-1-5 text-start">
+                                                        <label for="returnDate" class="form-label">Return</label>
+                                                        <input type="date" class="form-control form-control-focus2" id="returnDate">
+                                                    </div>
+                                
+                                                    <!-- <div class="col-md-3 text-start"> -->
+                                                        <div class="col-md-3 d-flex flex-column justify-content-start align-items-start">
+                                                            <label for="guests" class="form-label ">Rooms and Guests</label>
+                                
+                                                            <!-- Dinamic DropDown -->
+                                
+                                                            <div id="dropdownLocation2_1" class="dropdown-wrapper"></div>
+                                
+                                                        </div>
+                                
+                                                </div>
+                                
+                                                <div class="col-md-1 ">
+                                                    <button type="submit" class="btn btn-search btn-primary d-flex align-items-center gap-1"> <i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                                                </div>
+                                            </div>
+                                
+
+
+
+                                        </div>
+                                        <div id="oneWayContent" class=" d-none">
+                                            <div class="container-fluid  rounded-trip no-pdd mt-4">
+                                                <div class="container-fluid d-flex-custom gap-1 ">
+                                                    <div class="col-md-3 text-start">
+                                                        <label for="fromLocation" class="form-label">Leaving from</label>
+                                                        <input type="text" class="form-control form-control-focus2" id="fromLocation" placeholder="Hong Kong, All airports">
+                                                    </div>
+                                                    <div class="col-md-3 text-start">
+                                                        <label for="toLocation" class="form-label">Going to</label>
+                                                        <input type="text" class="form-control form-control-focus2" id="toLocation" placeholder="Enter destination">
+                                                    </div>
+                                
+                                
+                                                    <div class="col-md-3 text-start">
+                                                        <label for="departureDate" class="form-label ">Depart</label>
+                                                        <input type="date" class="form-control form-control-focus2" id="departureDate">
+                                                    </div>
+                                            
+
+                                
+                                                    <!-- <div class="col-md-3 text-start"> -->
+                                                        <div class="col-md-4 d-flex flex-column justify-content-start align-items-start">
+                                                            <label for="guests" class="form-label ">Rooms and Guests</label>
+                                
+                                                            <!-- Dinamic DropDown -->
+                                
+                                                            <div id="dropdownLocation2_2" class="dropdown-wrapper"></div>
+                                
+                                                        </div>
+                                
+                                                </div>
+                                
+                                                <div class="col-md-1 ">
+                                                    <button type="submit" class="btn btn-search btn-primary d-flex align-items-center gap-1"> <i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                                                </div>
+                                            </div>
+                                
+                                        </div>
+
+
+
+                                        <div id="multiCityContent" class=" d-none">
+                                    <div class="container-fluid  rounded-trip no-pdd mt-4">
+                                                <div class="container-fluid d-flex-custom gap-1 ">
+                                                    <div class="col-md-3 text-start">
+                                                        <label for="fromLocation" class="form-label">Leaving from</label>
+                                                        <input type="text" class="form-control form-control-focus2" id="fromLocation" placeholder="Hong Kong, All airports">
+                                                    </div>
+                                                    <div class="col-md-3 text-start">
+                                                        <label for="toLocation" class="form-label">Going to</label>
+                                                        <input type="text" class="form-control form-control-focus2" id="toLocation" placeholder="Enter destination">
+                                                    </div>
+                                
+                                
+                                                    <div class="col-md-3 text-start">
+                                                        <label for="departureDate" class="form-label ">Depart</label>
+                                                        <input type="date" class="form-control form-control-focus2" id="departureDate" placeholder="mm/dd/yyyy">
+                                                    </div>
+                                            
+
+                                
+                                                    <!-- <div class="col-md-3 text-start"> -->
+                                                        <div class="col-md-4 d-flex flex-column justify-content-start align-items-start">
+                                                            <label for="guests" class="form-label ">Rooms and Guests</label>
+                                
+                                                            <!-- Dinamic DropDown -->
+                                
+                                                            <div id="dropdownLocation2_3" class="dropdown-wrapper"></div>
+                                
+                                                        </div>
+                                
+                                                </div>
+
+                                                <div class="container-fluid d-flex-custom gap-1 ">
+                                                    <div class="col-md-3 text-start">
+                                                        <label for="fromLocation" class="form-label">Leaving from</label>
+                                                        <input type="text" class="form-control form-control-focus2" id="fromLocation" placeholder="Hong Kong, All airports">
+                                                    </div>
+                                                    <div class="col-md-3 text-start">
+                                                        <label for="toLocation" class="form-label">Going to</label>
+                                                        <input type="text" class="form-control form-control-focus2" id="toLocation" placeholder="Enter destination">
+                                                    </div>
+                                
+                                
+                                                    <div class="col-md-3 text-start">
+                                                        <label for="departureDate" class="form-label ">Depart</label>
+                                                        <input type="date" class="form-control form-control-focus2" id="departureDate">
+                                                    </div>
+                                            
+
+                                
+                                                </div>
+
+                                
+                                                <div class="col-md-1 ">
+                                                    <button type="submit" class="btn btn-search btn-primary d-flex align-items-center gap-1"> <i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+
+            <!-- Fields to show when Round-trip is selected -->
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ******************************************** -->
+                            </div>
+
+
+
+                            <div class="tab-pane fade" id="pills-trains" role="tabpanel">
+                                
+                                <div class="container-fluid  rounded-trip no-pdd mt-4">
+                                    <div class="d-flex-custom gap-1">
+                                        <div class="col-2-5 text-start">
+                                            <label for="fromLocation" class="form-label">Leaving from</label>
+                                            <input type="text" class="form-control form-control-focus2" id="fromLocation" placeholder="Hong Kong, All airports">
+                                        </div>
+                                        <div class="col-2-5 text-start">
+                                            <label for="toLocation" class="form-label">Going to</label>
+                                            <input type="text" class="form-control form-control-focus2" id="toLocation" placeholder="Enter destination">
+                                        </div>
+                    
+                    
+                                        <div class="col-md-1-5 text-start">
+                                            <label for="departureDate" class="form-label ">Depart</label>
+                                            <input type="date" class="form-control form-control-focus2" id="departureDate">
+                                        </div>
+                                
+                                        <!-- العمود الثاني (Return) مع عرض 12.5% -->
+                                        <div class="col-md-1-5 text-start">
+                                            <label for="returnDate" class="form-label">Return</label>
+                                            <input type="date" class="form-control form-control-focus2" id="returnDate">
+                                        </div>
+                    
+                                        <!-- <div class="col-md-3 text-start"> -->
+                                            <div class="col-md-3 d-flex flex-column justify-content-start align-items-start">
+                                                <label for="guests" class="form-label ">Rooms and Guests</label>
+                    
+                                                <!-- Dinamic DropDown -->
+                    
+                                                <div id="dropdownLocation3" class="dropdown-wrapper"></div>
+                    
+                                            </div>
+                    
+                                    </div>
+                    
+                                    <div class="col-md-1 me-3">
+                                        <button type="submit" class="btn btn-search btn-primary d-flex align-items-center gap-1"> <i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                                    </div>
+                                </div>
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                             </div>
                             <div class="tab-pane fade" id="pills-cars" role="tabpanel">
-                                <p>Car booking form here...</p>
-                            </div>
-                            <div class="tab-pane fade" id="pills-trains" role="tabpanel">
                                 <p>Train booking form here...</p>
                             </div>
                         </div>
@@ -602,7 +888,7 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js " defer></script>
 </body>
 
 </html>
