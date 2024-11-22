@@ -125,9 +125,7 @@
           <label for="economyClass${data.locationId}">Travel Class</label>
           <select id="economyClass${data.locationId}" class="form-select">
             <option value="Economy">Economy</option>
-            <option value="Economy/premium economy">Economy/premium economy</option>
             <option value="Premium Economy">Premium Economy</option>
-            <option value="First / Business">First / Business</option>
             <option value="Business">Business</option>
             <option value="First ">First </option>
           </select>

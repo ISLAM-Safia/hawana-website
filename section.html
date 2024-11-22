@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Featured Properties</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .property-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .property-card:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .property-image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .property-content {
+      padding: 16px;
+    }
+    .property-rating {
+      font-size: 14px;
+      color: #f39c12;
+    }
+    .price {
+      font-weight: bold;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="mb-4">Featured Properties</h2>
+  <div class="d-flex align-items-center mb-4">
+    <div class="me-3"><span>✅ We Price Match</span></div>
+    <div class="me-3"><span>📅 Hotel Booking Guarantee</span></div>
+    <div><span>🚖 Hotel Stay Guarantee</span></div>
+  </div>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs mb-4" id="propertyTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="shanghai-tab" type="button" onclick="showProperties('shanghai')">Shanghai</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="guangzhou-tab" type="button" onclick="showProperties('guangzhou')">Guangzhou</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="beijing-tab" type="button" onclick="showProperties('beijing')">Beijing</button>
+    </li>
+  </ul>
+
+  <!-- Dynamic Content -->
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4" id="dynamic-content">
+    <!-- Dynamic Cards -->
+    <div id="property-1"></div>
+    <div id="property-2"></div>
+    <div id="property-3"></div>
+    <!-- Static Card -->
+    <div>
+      <div class="property-card">
+        <div class="property-image">
+          <img src="img/bg-hero.jpg" alt="Static Image">
+        </div>
+        <div class="property-content">
+          <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+          <button class="btn btn-primary mt-2">Go Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+  const properties = {
+    shanghai: [
+      {
+        image: 'img/destination-1.jpg',
+        title: 'Yitel Premium (Shanghai)',
+        rating: '⭐ 4.7/5 (6166 reviews)',
+        price: 'From SAR 365',
+      },
+      {
+        image: 'img/destination-2.jpg',
+        title: 'Radisson Collection Hyland',
+        rating: '⭐ 4.5/5 (3106 reviews)',
+        price: 'From SAR 447',
+      },
+      {
+        image: 'img/destination-3.jpg',
+        title: 'Da Zhong Airport Hotel',
+        rating: '⭐ 4.2/5 (9615 reviews)',
+        price: 'From SAR 310',
+      },
+    ],
+    guangzhou: [
+      {
+        image: 'img/destination-4.jpg',
+        title: 'Guangzhou Hotel A',
+        rating: '⭐ 4.8/5 (5120 reviews)',
+        price: 'From SAR 400',
+      },
+      {
+        image: 'img/destination-1.jpg',
+        title: 'Guangzhou Hotel B',
+        rating: '⭐ 4.6/5 (3890 reviews)',
+        price: 'From SAR 350',
+      },
+      {
+        image: 'img/destination-3.jpg',
+        title: 'Guangzhou Hotel C',
+        rating: '⭐ 4.4/5 (2750 reviews)',
+        price: 'From SAR 290',
+      },
+    ],
+    beijing: [
+      {
+        image: 'img/package-1.jpg',
+        title: 'Beijing Hotel A',
+        rating: '⭐ 4.9/5 (6230 reviews)',
+        price: 'From SAR 420',
+      },
+      {
+        image: 'img/package-2.jpg',
+        title: 'Beijing Hotel B',
+        rating: '⭐ 4.7/5 (4700 reviews)',
+        price: 'From SAR 390',
+      },
+      {
+        image: 'img/package-3.jpg',
+        title: 'Beijing Hotel C',
+        rating: '⭐ 4.5/5 (3200 reviews)',
+        price: 'From SAR 360',
+      },
+    ],
+  };
+
+  function showProperties(city) {
+    for (let i = 0; i < 3; i++) {
+      const property = properties[city][i];
+      document.getElementById(`property-${i + 1}`).innerHTML = `
+        <div class="property-card">
+          <div class="property-image">
+            <img src="${property.image}" alt="${property.title}">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2">${property.title}</h5>
+            <div class="property-rating">${property.rating}</div>
+            <div class="price">${property.price}</div>
+          </div>
+        </div>
+      `;
+    }
+  }
+
+  // Initialize with Shanghai properties
+  showProperties('shanghai');
+</script>
+
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
