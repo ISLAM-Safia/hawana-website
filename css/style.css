@@ -251,7 +251,7 @@
 /* #eeb36e */
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/flight-hp.jpg);
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/5913506115428139801.jpg);
     /* background-image: url(../img/flight-hp.jpg); */
     background-position:  center center;
     background-repeat: no-repeat;
@@ -327,10 +327,10 @@
     outline: none;
 
 } 
-.btn-search:hover {
+/* .btn-search:hover {
     color: #FFFFFF;
 
-}
+} */
 .custom-col-3-5 {
     flex: 0 0 30%; /* 3.5 / 12 = 0.291667 */
     max-width: 29.1667%;
