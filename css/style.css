@@ -3,7 +3,8 @@
     /* --primary: #86B817; */
     /* --primary: hsl(210, 88%, 65%); */
     /* --primary: hsl(225, 73%, 48%) !important; #fb9e34 */
-    --primary:#FE8800 !important;
+    /* --primary:#FE8800 !important; */
+    --primary:#eeb36e !important;
     --secondary: #FE8800;
     --light: #F5F5F5;
     --dark: #14141F;
@@ -68,6 +69,12 @@
     bottom: 45px;
     z-index: 99;
 }
+/* css */
+.bg-primary-css {
+    background-color:#eeb36e ;
+}
+
+
 
 .col-2-5 {
     flex: 0 0 20.833%; /* 2.5 / 12 = 0.20833 */
@@ -241,11 +248,11 @@
     color: var(--primary);
     cursor: pointer;
 }
-
+/* #eeb36e */
 /*** Hero Header ***/
 .hero-header {
-    /* background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/flight-hp.jpg); */
-    background-image: url(../img/flight-hp.jpg);
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/flight-hp.jpg);
+    /* background-image: url(../img/flight-hp.jpg); */
     background-position:  center center;
     background-repeat: no-repeat;
     background-size:cover;

@@ -32,50 +32,145 @@
       font-weight: bold;
       color: #007bff;
     }
+    .nav-tabs {
+      border-bottom: none;
+    }
+    .nav-tabs .nav-link {
+      background-color: #f8f9fa;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      margin-right: 8px;
+      padding: 8px 16px;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+    .nav-tabs .nav-link.active {
+      background-color: #002855;
+      color: #ffffff;
+    }
+    .nav-tabs .nav-link:focus {
+      box-shadow: none; /* إزالة حركة التركيز */
+    }
+    .row > div {
+    display: flex;
+  }
+
+  /* تثبيت ارتفاع البطاقات */
+  .property-card {
+    height: 100%; /* ضمان أن البطاقات تأخذ ارتفاع العمود بالكامل */
+    display: flex;
+    flex-direction: column; /* ترتيب المحتوى عموديًا */
+    justify-content: space-between; /* توزيع العناصر بالتساوي */
+  }
+
+  /* صورة الخلفية في البطاقة الثابتة */
+  .property-card.fixed-height {
+    min-height: 300px; /* تثبيت الارتفاع الأدنى */
+  }
+
+  .property-card {
+    height: 100%; /* تأخذ كامل ارتفاع العمود */
+    display: flex;
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+    justify-content: space-between; /* توزيع المساحات بالتساوي */
+  }
+
+  .property-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .property-content {
+    flex-grow: 1; /* يسمح للنصوص باستخدام المساحة المتاحة فقط */
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* توزيع النصوص بالتساوي */
+  }
+
+  .property-content h5 {
+    margin-bottom: auto; /* اجعل النص يلتصق بالجزء العلوي */
+  }
+
+  .price {
+    margin-top: auto; /* اجعل السعر يلتصق بالجزء السفلي */
+    font-weight: bold;
+    color: #007bff;
+  }
   </style>
 </head>
 <body>
 
 <div class="container py-5">
   <h2 class="mb-4">Featured Properties</h2>
-  <div class="d-flex align-items-center mb-4">
-    <div class="me-3"><span>✅ We Price Match</span></div>
-    <div class="me-3"><span>📅 Hotel Booking Guarantee</span></div>
-    <div><span>🚖 Hotel Stay Guarantee</span></div>
-  </div>
-
-  <!-- Tabs -->
   <ul class="nav nav-tabs mb-4" id="propertyTabs" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="shanghai-tab" type="button" onclick="showProperties('shanghai')">Shanghai</button>
+    <li class="nav-item">
+      <button class="nav-link active" id="shanghai-tab" type="button" onclick="showProperties('shanghai', this)">Shanghai</button>
     </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="guangzhou-tab" type="button" onclick="showProperties('guangzhou')">Guangzhou</button>
+    <li class="nav-item">
+      <button class="nav-link" id="guangzhou-tab" type="button" onclick="showProperties('guangzhou', this)">Guangzhou</button>
     </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="beijing-tab" type="button" onclick="showProperties('beijing')">Beijing</button>
+    <li class="nav-item">
+      <button class="nav-link" id="beijing-tab" type="button" onclick="showProperties('beijing', this)">Beijing</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" id="tokyo-tab" type="button" onclick="showProperties('Tokyo', this)">Tokyo</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" id="hong-kong-tab" type="button" onclick="showProperties('Hong Kong', this)">Hong Kong</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" id="seoul-tab" type="button" onclick="showProperties('Seoul', this)">Seoul</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" id="singapore-tab" type="button" onclick="showProperties('Singapore', this)">Singapore</button>
     </li>
   </ul>
 
-  <!-- Dynamic Content -->
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4" id="dynamic-content">
-    <!-- Dynamic Cards -->
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4" id="dynamic-content">
     <div id="property-1"></div>
     <div id="property-2"></div>
     <div id="property-3"></div>
-    <!-- Static Card -->
+
+
     <div>
-      <div class="property-card">
-        <div class="property-image">
-          <img src="img/bg-hero.jpg" alt="Static Image">
-        </div>
-        <div class="property-content">
+      <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+        <div class="property-content" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
           <h5 class="mb-2">Discover great deals on hotels around the world</h5>
           <button class="btn btn-primary mt-2">Go Now</button>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4" id="dynamic-content">
+    <div id="property-1"></div>
+    <div id="property-2"></div>
+    <div id="property-3"></div>
+    <div>
+      <div class="property-card" style="      position: relative;
+      height: 300px; /* ارتفاع القسم */
+      background: url('img/bg-hero.jpg') no-repeat center center/cover; /* الصورة كخلفية تغطي القسم */
+      border-radius: 8px;
+      overflow: hidden; ">
+
+        <div class="property-content" style="   
+    background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5);
+            position: absolute;
+            bottom: 0;
+        color: white;
+        text-align: center;z-index: 100; 
+        display: flex;
+        flex-direction: column;">
+          <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+          <button class="btn btn-primary mt-2 ">Go Now</button>
+        </div>
+
+      </div>
+    </div>
+  </div> -->
 </div>
 
 <!-- JavaScript -->
@@ -84,8 +179,8 @@
     shanghai: [
       {
         image: 'img/destination-1.jpg',
-        title: 'Yitel Premium (Shanghai)',
-        rating: '⭐ 4.7/5 (6166 reviews)',
+        title: 'Yitel Premium (Shanghai) yjtyjtyjtyj tttyhhtyh tyht rj ruj uyjyujyujyukuy',
+        rating: '⭐ 4.7/5 (6166 reviews )',
         price: 'From SAR 365',
       },
       {
@@ -140,10 +235,91 @@
         rating: '⭐ 4.5/5 (3200 reviews)',
         price: 'From SAR 360',
       },
+    ], 
+    Tokyo: [
+      {
+        image: 'img/destination-1.jpg',
+        title: 'Yitel Premium (Shanghai) yjtyjtyjtyj tttyhhtyh tyht rj ruj uyjyujyujyukuy',
+        rating: '⭐ 4.7/5 (6166 reviews )',
+        price: 'From SAR 365',
+      },
+      {
+        image: 'img/destination-2.jpg',
+        title: 'Radisson Collection Hyland',
+        rating: '⭐ 4.5/5 (3106 reviews)',
+        price: 'From SAR 447',
+      },
+      {
+        image: 'img/destination-3.jpg',
+        title: 'Da Zhong Airport Hotel',
+        rating: '⭐ 4.2/5 (9615 reviews)',
+        price: 'From SAR 310',
+      },
+    ],
+    'Hong Kong': [
+      {
+        image: 'img/destination-4.jpg',
+        title: 'Guangzhou Hotel A',
+        rating: '⭐ 4.8/5 (5120 reviews)',
+        price: 'From SAR 400',
+      },
+      {
+        image: 'img/destination-1.jpg',
+        title: 'Guangzhou Hotel B',
+        rating: '⭐ 4.6/5 (3890 reviews)',
+        price: 'From SAR 350',
+      },
+      {
+        image: 'img/destination-3.jpg',
+        title: 'Guangzhou Hotel C',
+        rating: '⭐ 4.4/5 (2750 reviews)',
+        price: 'From SAR 290',
+      },
+    ],
+    Seoul: [
+      {
+        image: 'img/package-1.jpg',
+        title: 'Beijing Hotel A',
+        rating: '⭐ 4.9/5 (6230 reviews)',
+        price: 'From SAR 420',
+      },
+      {
+        image: 'img/package-2.jpg',
+        title: 'Beijing Hotel B',
+        rating: '⭐ 4.7/5 (4700 reviews)',
+        price: 'From SAR 390',
+      },
+      {
+        image: 'img/package-3.jpg',
+        title: 'Beijing Hotel C',
+        rating: '⭐ 4.5/5 (3200 reviews)',
+        price: 'From SAR 360',
+      },
+    ],
+    Singapore: [
+      {
+        image: 'img/destination-1.jpg',
+        title: 'Yitel Premium (Shanghai) yjtyjtyjtyj tttyhhtyh tyht rj ruj uyjyujyujyukuy',
+        rating: '⭐ 4.7/5 (6166 reviews )',
+        price: 'From SAR 365',
+      },
+      {
+        image: 'img/destination-2.jpg',
+        title: 'Radisson Collection Hyland',
+        rating: '⭐ 4.5/5 (3106 reviews)',
+        price: 'From SAR 447',
+      },
+      {
+        image: 'img/destination-3.jpg',
+        title: 'Da Zhong Airport Hotel',
+        rating: '⭐ 4.2/5 (9615 reviews)',
+        price: 'From SAR 310',
+      },
     ],
   };
 
-  function showProperties(city) {
+  function showProperties(city, element) {
+    // تحديث المحتوى الديناميكي
     for (let i = 0; i < 3; i++) {
       const property = properties[city][i];
       document.getElementById(`property-${i + 1}`).innerHTML = `
@@ -159,10 +335,15 @@
         </div>
       `;
     }
+
+    // تحديث الحالة النشطة (Active State)
+    const tabs = document.querySelectorAll('.nav-link');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    element.classList.add('active');
   }
 
   // Initialize with Shanghai properties
-  showProperties('shanghai');
+  showProperties('shanghai', document.getElementById('shanghai-tab'));
 </script>
 
 <!-- Bootstrap Bundle JS -->
