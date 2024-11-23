@@ -251,7 +251,8 @@
 /* #eeb36e */
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/5913506115428139801.jpg);
+    /* background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/5913506115428139801.jpg); */
+    background-image:  url(../img/5913506115428139801.jpg);
     /* background-image: url(../img/flight-hp.jpg); */
     background-position:  center center;
     background-repeat: no-repeat;
