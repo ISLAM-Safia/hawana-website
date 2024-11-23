@@ -104,7 +104,7 @@
 
 .btn.btn-primary,
 .btn.btn-secondary {
-    color: #FFFFFF;
+    color: var(--text-title-color);
 }
 
 .btn-square {
@@ -321,7 +321,7 @@
 }
 .btn-search {
     background-color: var(--primary);
-    color: #fff;
+    color: var(--text-title-color);
     border-radius: 8px;
     padding: 10px 20px;
     outline: none;
