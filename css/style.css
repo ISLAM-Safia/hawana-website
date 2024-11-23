@@ -149,7 +149,7 @@
     outline: none;
     transition: .5s;
 }
-
+/* background-image: linear-gradient(to right, #24a6bd 0, rgba(255, 107, 48, 0.01) 100%); */
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
     color:var(--white-text) !important;
@@ -252,7 +252,7 @@
 /*** Hero Header ***/
 .hero-header {
     /* background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/5913506115428139801.jpg); */
-    background-image:  url(../img/5913506115428139801.jpg);
+    background-image:  url(../img/5913506115428139965.jpg);
     /* background-image: url(../img/flight-hp.jpg); */
     background-position:  center center;
     background-repeat: no-repeat;
