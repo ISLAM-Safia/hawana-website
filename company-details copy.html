@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminLTE Tabs Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/admin-lte@3.2.0/dist/css/adminlte.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+body {
+        direction: rtl;
+        background-color: #fafafa;
+        text-align: right;
+        font-family: "Cairo", sans-serif;
+        padding: 30px;
+    }
+
+    .container-wrapper {
+        margin-top: 1rem;
+    }
+
+    .tab-container {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 1rem;
+    }
+
+    .nav-tabs {
+        display: flex;
+        flex-direction: column;
+        color: #060707;
+        gap: .2rem;
+        flex: 1 1 200px; 
+    }
+
+    a {
+        text-decoration: none;
+        color: #060707;
+    }
+
+    .nav-item {
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    a:hover {
+        background-color: #8467a8;
+        color: #060707;
+    }
+
+    .nav-link {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 85px;
+        border-radius: 10px;
+    }
+
+    .nav-link.active,
+    .nav-item {
+        background-color: #8162a8 !important;
+        color: #060707;
+    }
+
+    .nav-link.active {
+        border: none;
+        color: #000 !important;
+    }
+
+    .tab-content {
+        width: calc(100% - 220px);
+    }
+
+    .tab-content .tab-pane {
+        padding: 20px;
+    }
+
+    .btn-add {
+        background-color: #8162a8;
+        color: #fff;
+    }
+
+    input,
+    textarea {
+        background-color: #e2e5ea !important;
+        padding: 1.5rem 1rem !important;
+    }
+
+    label {
+        color: #7b817f;
+    }
+
+    .btn-cancel {
+        background-color: #e2e5ea;
+        color: #060707;
+    }
+
+    .btn-br {
+        border-radius: 27px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 992px) {
+        body {
+            padding: 10px !important;
+        }
+        .container-wrapper {
+            padding: 0;
+        }
+
+    }
+
+    @media (max-width: 868px) {
+        body {
+            padding: 10px !important;
+        }
+        .container-wrapper {
+            padding: 0;
+        }
+        
+        .nav-tabs {
+            padding-right: 0;
+        }
+        .tab-content .tab-pane {
+            padding: 5px;
+        }
+
+    }
+    @media (max-width: 768px) {
+        .nav-tabs {
+            padding-right: 0;
+        }
+        .tab-content .tab-pane {
+            padding: 5px;
+        }
+        .tab-container {
+            flex-direction: column;
+        }
+        .nav-tabs {
+            width: 100%; 
+        }
+        .tab-content {
+            width: 100%;
+        }
+        .btn-add {
+            margin-bottom: 5px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .nav-link {
+            height: 60px; 
+        }
+    }
+
+    </style>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="container-fluid container-wrapper p-3">
+    <h3 class=" mb-4">تحرير اعدادات التطبيق</h3>
+    <div class="tab-container bg-white">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="true">حول  </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"> روابط اجتماعية </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="terms-tab" data-toggle="tab" href="#terms" role="tab" aria-controls="terms" aria-selected="false">الشروط والاحكام  </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="file-tab" data-toggle="tab" href="#file" role="tab" aria-controls="file" aria-selected="false"> الملفات </a>
+            </li>
+        </ul>
+
+
+        <div class="tab-content bg-white" id="myTabContent">
+            <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                <div class="card-body p-0">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="exampleInputEmail1">الاسم بالانجليزية</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="hawana">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="exampleInputPassword1">الاسم بالعربية</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="هوانا">
+                      </div>
+                    </div>
+                  
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="exampleInputEmail1">البريد الالكتروني </label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="info@hawana.us">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="exampleInputPassword1">الهاتف</label>
+                          <input type="number" class="form-control" id="exampleInputPassword1" placeholder="+966145237654">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="exampleInputEmail1">الخط الساخن </label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="199999">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="exampleInputPassword1">واتساب</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="+966145237654">
+                        </div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="exampleInputPassword1">رقم الشركة</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="111 222 333 ">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputEmail1">حقوق النشر بالإنجليزية</label>
+                            <textarea  class="form-control "  style="height: 100px;">copy right</textarea>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword1">حقوق النشر بالعربية</label>
+                            <textarea  class="form-control" style="height: 100px;">حقوق النشر</textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputEmail1">تفاصيل عن الشركة بالإنجليزية</label>
+                            <textarea id="mytextarea" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword1">تفاصيل عن الشركة بالعربية</label>
+                            <textarea id="mytextarea" class="form-control"></textarea>
+                        </div>
+                    </div>
+
+
+                  </div>
+                  
+                 
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="card-body p-0">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="exampleInputEmail1">فيسبوك </label>
+                        <input type="url" class="form-control" id="exampleInputEmail1" placeholder="https://www.facebook.com/">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="exampleInputPassword1">انستجرام </label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="https://www.instagram.com/">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="exampleInputEmail1">تويتر </label>
+                          <input type="url" class="form-control" id="exampleInputEmail1" placeholder="https://www.twitter.com/">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="exampleInputPassword1">سناب شات </label>
+                          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="https://www.snapchat.com/">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="exampleInputEmail1">لينكدان </label>
+                          <input type="url" class="form-control" id="exampleInputEmail1" placeholder="https://www.linkedin.com/">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="exampleInputPassword1">يوتيوب </label>
+                          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="https://www.youtube.com/">
+                        </div>
+                      </div>
+                  
+
+
+                  </div>
+            </div>
+            <div class="tab-pane fade" id="terms" role="tabpanel" aria-labelledby="terms-tab">
+                <div class="card-body p-0">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputEmail1">الشروط والاحكام   بالإنجليزية</label>
+                            <textarea id="mytextarea" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword1">الشروط والاحكام   بالعربية</label>
+                            <textarea id="mytextarea" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputEmail1">الخصوصية بالإنجليزية</label>
+                            <textarea id="mytextarea" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword1"> الخصوصية  بالعربية</label>
+                            <textarea id="mytextarea" class="form-control"></textarea>
+                        </div>
+                    </div>
+
+
+
+                  </div>
+            </div>
+            <div class="tab-pane fade" id="file" role="tabpanel" aria-labelledby="file-tab">
+                <div class="card-body ">
+                <div class="form-group "  >
+                    <label for="customFile"> اختر ملف</label>
+                    <br>
+
+                    <div class="custom-file  col-md-10">
+                      <input type="file" class="custom-file-input" id="customFile" >
+                      <label class="custom-file-label" for="customFile"> اختر ملف</label>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="form-group  mt-5 ">
+                <div class="form-row">
+                    <button type="submit" class="btn btn-br btn-add col-md-5">أضف</button>
+                    <button type="button" class="btn  btn-br btn-cancel mr-2 col-md-5">تراجع</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+     <script src="https://cdn.tiny.cloud/1/eaua1cmgec85m6jpd3bzwrz4i8a1dxsao5a3vr2qd09xplog/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2.0/dist/js/adminlte.min.js"></script>
+    <script>
+tinymce.init({
+    selector: 'textarea#mytextarea',
+    plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+    toolbar: 'undo redo | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist | link image | code',
+    menubar: false,
+    readonly: false ,
+    external_plugins: {
+        'print': 'https://cdn.tiny.cloud/1/eaua1cmgec85m6jpd3bzwrz4i8a1dxsao5a3vr2qd09xplog/tinymce/7/plugins/print/plugin.min.js',
+        'hr': 'https://cdn.tiny.cloud/1/eaua1cmgec85m6jpd3bzwrz4i8a1dxsao5a3vr2qd09xplog/tinymce/7/plugins/hr/plugin.min.js'
+    }
+});
+      </script>
+      
+</body>
+</html>
