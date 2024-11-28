@@ -255,8 +255,8 @@
 /*** Hero Header ***/
 .hero-header {
 
-    /* background-image:  url(../img/5913506115428139965.jpg); */
-    background-image:  url(../img/new2.jpg);
+    background-image:  url(../img/5913506115428139965.jpg);
+    /* background-image:  url(../img/new2.jpg); */
     background-position:  center center;
     background-repeat: no-repeat;
     background-size:cover;
