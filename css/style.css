@@ -93,7 +93,9 @@
     visibility: visible;
     opacity: 1;
 }
-
+.transform-flight {
+    transform: rotate(-44deg);
+}
 
 /*** Button ***/
 .btn {
