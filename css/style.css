@@ -219,6 +219,7 @@
         width: 0;
         height: 2px;
         bottom: -1px;
+        top: 66px;
         left: 50%;
         background: var(--primary);
         transition: .5s;
@@ -228,6 +229,7 @@
     .navbar-light .navbar-nav .nav-link.active::before {
         width: calc(100% - 2px);
         left: 1px;
+
     }
 
     .navbar-light .navbar-nav .nav-link.nav-contact::before {
@@ -248,20 +250,49 @@
     color: var(--primary);
     cursor: pointer;
 }
+    /* background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/5913506115428139801.jpg); */
 /* #eeb36e */
 /*** Hero Header ***/
-.hero-header {
-    /* background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/5913506115428139801.jpg); */
+/* .hero-header {
+
     background-image:  url(../img/5913506115428139965.jpg);
-    /* background-image: url(../img/flight-hp.jpg); */
     background-position:  center center;
     background-repeat: no-repeat;
     background-size:cover;
     height: 71vh;
-    border-bottom-left-radius: 20px; /* الزاوية اليسرى السفلية */
-    border-bottom-right-radius: 20px; /* الزاوية اليمنى السفلية */
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px; 
     overflow: hidden;
     box-shadow:  0 4px 6px -1px rgba(0, 0, 0, .5);
+} */
+
+.hero-header {
+    background-image: url(../img/5913506115428139965.jpg), url(../img/bg-hero.jpg), url(../img/flight-hp.jpg); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 71vh;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .5);
+    animation: slideBackground 20s infinite; /* يتحرك كل 15 ثانية */
+}
+
+
+@keyframes slideBackground {
+    0% {
+        background-image: url(../img/5913506115428139965.jpg);
+    }
+    33% {
+        background-image: url(../img/bg-hero.jpg);
+    }
+    66% {
+        background-image: url(../img/flight-hp.jpg);
+    }
+    100% {
+        background-image: url(../img/5913506115428139965.jpg);
+    }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
