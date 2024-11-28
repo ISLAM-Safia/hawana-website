@@ -253,9 +253,10 @@
     /* background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/5913506115428139801.jpg); */
 /* #eeb36e */
 /*** Hero Header ***/
-/* .hero-header {
+.hero-header {
 
-    background-image:  url(../img/5913506115428139965.jpg);
+    /* background-image:  url(../img/5913506115428139965.jpg); */
+    background-image:  url(../img/new.jpg);
     background-position:  center center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -264,9 +265,9 @@
     border-bottom-right-radius: 20px; 
     overflow: hidden;
     box-shadow:  0 4px 6px -1px rgba(0, 0, 0, .5);
-} */
+}
 
-.hero-header {
+/* .hero-header {
     background-image: url(../img/5913506115428139965.jpg), url(../img/bg-hero.jpg), url(../img/flight-hp.jpg); 
     background-position: center center;
     background-repeat: no-repeat;
@@ -276,7 +277,7 @@
     border-bottom-right-radius: 20px; 
     overflow: hidden;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .5);
-    animation: slideBackground 20s infinite; /* يتحرك كل 15 ثانية */
+    animation: slideBackground 20s infinite; 
 }
 
 
@@ -293,7 +294,7 @@
     100% {
         background-image: url(../img/5913506115428139965.jpg);
     }
-}
+} */
 
 .breadcrumb-item + .breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
