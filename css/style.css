@@ -136,12 +136,14 @@
 }
 
 .hawana-info-home {
-    background-color: var(--text-title-color);
+    /* background-color: var(--text-title-color); */
+    background-color: #0c3057;
     color: var(--white-text);
 }
 /*** Navbar ***/
 .navbar-light{
-    background: linear-gradient(#003165, rgb(210 210 218 / 70%));
+    /* background: linear-gradient(#003165, rgb(210 210 218 / 70%)); */
+    background: linear-gradient(#003165, rgb(247 247 255 / 70%));
 }
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Nunito', sans-serif;
@@ -882,3 +884,5 @@
     padding-right: 0;
     border-right: none;
 }
+/* /////////////////////////////الاقسام */
+
