@@ -7,35 +7,35 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .property-card {
+    .city-section-wrapper .property-card {
       border: 1px solid #ddd;
       border-radius: 8px;
       overflow: hidden;
       transition: box-shadow 0.3s ease-in-out;
     }
-    .property-card:hover {
+    .city-section-wrapper  .property-card:hover {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
-    .property-image img {
+    .city-section-wrapper .property-image img {
       width: 100%;
       height: 200px;
       object-fit: cover;
     }
-    .property-content {
+    .city-section-wrapper .property-content {
       padding: 16px;
     }
-    .property-rating {
+    .city-section-wrapper .property-rating {
       font-size: 14px;
       color: #f39c12;
     }
-    .price {
+        .city-section-wrapper .price {
       font-weight: bold;
       color: #007bff;
     }
-    .nav-tabs {
+        .city-section-wrapper .nav-tabs {
       border-bottom: none;
     }
-    .nav-tabs .nav-link {
+        .city-section-wrapper .nav-tabs .nav-link {
       background-color: #f8f9fa;
       color: #000;
       border: none;
@@ -47,22 +47,22 @@
     border-radius: 4px;
     box-shadow: 0 8px 16px 0 rgba(15, 41, 77, .08);
     }
-    .nav-tabs .nav-link.active {
+        .city-section-wrapper .nav-tabs .nav-link.active {
       /* background-color: #002855;
       color: #ffffff; */
       background-color: #0f294d;
     color: #fff;
 
     }
-    .nav-tabs .nav-link:focus {
+        .city-section-wrapper .nav-tabs .nav-link:focus {
       box-shadow: none; /* إزالة حركة التركيز */
     }
-    .row > div {
+        .city-section-wrapper .row > div {
     display: flex;
   }
 
   /* تثبيت ارتفاع البطاقات */
-  .property-card {
+      .city-section-wrapper .property-card {
     height: 100%; /* ضمان أن البطاقات تأخذ ارتفاع العمود بالكامل */
     display: flex;
     flex-direction: column; /* ترتيب المحتوى عموديًا */
@@ -78,24 +78,24 @@
   }
 
   /* صورة الخلفية في البطاقة الثابتة */
-  .property-card.fixed-height {
+      .city-section-wrapper .property-card.fixed-height {
     min-height: 300px; /* تثبيت الارتفاع الأدنى */
   }
 
-  .property-card {
+      .city-section-wrapper .property-card {
     height: 100%; /* تأخذ كامل ارتفاع العمود */
     display: flex;
     flex-direction: column; /* ترتيب العناصر عموديًا */
     justify-content: space-between; /* توزيع المساحات بالتساوي */
   }
 
-  .property-image img {
+      .city-section-wrapper .property-image img {
     width: 100%;
     height: 200px;
     object-fit: cover;
   }
 
-  .property-content {
+      .city-section-wrapper .property-content {
     flex-grow: 1; /* يسمح للنصوص باستخدام المساحة المتاحة فقط */
     padding: 16px;
     display: flex;
@@ -103,19 +103,19 @@
     justify-content: space-between; /* توزيع النصوص بالتساوي */
   }
 
-  .property-content h5 {
+      .city-section-wrapper .property-content h5 {
     margin-bottom: auto; /* اجعل النص يلتصق بالجزء العلوي */
   }
-.property-content-fixedimg {
+    .city-section-wrapper .property-content-fixedimg {
   margin-top: auto;
 }
-  .price {
+      .city-section-wrapper .price {
     /* margin-top: auto;  */
     font-weight: bold;
     color: #007bff;
     align-self: end;
   }
-  .property-review {
+      .city-section-wrapper .property-review {
     display: flex;
     gap: .5rem;
     color: #00429b;
@@ -123,19 +123,19 @@
     margin-top: .3rem;
 }
   
-  .property-city-rating {
+     .city-section-wrapper  .property-city-rating {
     background: #00429b;
     border-radius: 11px 0 11px 11px;
     padding: 1px 6px;
     color: #fff;
 
   }
-  .property-total-rating {
+     .city-section-wrapper  .property-total-rating {
     color: hsla(0, 0%, 100%, .5);
     font-size: 12px;
     line-height: 1.3;
   }
-  .property-city-title {
+  .city-section-wrapper .property-city-title {
     color: #0f294d;
     font-size: 16px;
     font-weight: 700;
@@ -144,13 +144,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .icon-home {
+  .city-section-wrapper .icon-home {
     display: flex;
     justify-content: center;
 
 
 }
-.ol-usp-simple-text__icon {
+.city-section-wrapper .ol-usp-simple-text__icon {
     background-size: 100% 100%;
     flex-shrink: 0;
     height: 20px;
@@ -158,7 +158,7 @@
     width: 20px;
 
 }
-.icon-home-title {
+.city-section-wrapper .icon-home-title {
     border-bottom: .5px dashed #0f294d;
     color: #0f294d;
     cursor: help;

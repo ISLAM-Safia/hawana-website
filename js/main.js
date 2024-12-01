@@ -578,4 +578,242 @@ const typed = new Typed('.multiple-text' ,{
     loop : true
   });
 
-  
+  // //////////////////////////////
+  const properties = {
+    shanghai: [
+      {
+        image: 'img/destination-1.jpg',
+        title: 'Heyitang Hotel Shanghai International Tourism Resort  ',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 365',
+      },
+      {
+        image: 'img/destination-2.jpg',
+        title: 'Heyitang Hotel Shanghai International Tourism Resort  ',
+        ratingstar: '⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 447',
+      },
+      {
+        image: 'img/destination-3.jpg',
+        title: 'Yitel Premium (Shanghai peoples Square Nanjing Road Pedestrian Street shop)',
+        ratingstar: '⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 310',
+      },
+    ],
+    guangzhou: [
+      {
+        image: 'img/destination-1.jpg',
+        title: 'Guangzhou Hotel A',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 400',
+      },
+      {
+        image: 'img/destination-1.jpg',
+        title: 'Guangzhou Hotel B',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 350',
+      },
+      {
+        image: 'img/destination-3.jpg',
+        title: 'Guangzhou Hotel C',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 290',
+      },
+    ],
+    beijing: [
+      {
+        image: 'img/package-1.jpg',
+        title: 'Beijing Hotel A',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 420',
+      },
+      {
+        image: 'img/package-2.jpg',
+        title: 'Beijing Hotel B',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 390',
+      },
+      {
+        image: 'img/package-3.jpg',
+        title: 'Beijing Hotel C',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 360',
+      },
+    ], 
+    Tokyo: [
+      {
+        image: 'img/destination-1.jpg',
+        title: 'Heyitang Hotel Shanghai International Tourism Resort  ',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 365',
+      },
+      {
+        image: 'img/destination-2.jpg',
+        title: 'Heyitang Hotel Shanghai International Tourism Resort  ',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 447',
+      },
+      {
+        image: 'img/destination-3.jpg',
+        title: 'Yitel Premium (Shanghai peoples Square Nanjing Road Pedestrian Street shop)',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 310',
+      },
+    ],
+    'Hong Kong': [
+      {
+        image: 'img/destination-1.jpg',
+        title: 'Guangzhou Hotel A',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 400',
+      },
+      {
+        image: 'img/destination-1.jpg',
+        title: 'Guangzhou Hotel B',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 350',
+      },
+      {
+        image: 'img/destination-3.jpg',
+        title: 'Guangzhou Hotel C',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 290',
+      },
+    ],
+    Seoul: [
+      {
+        image: 'img/package-1.jpg',
+        title: 'Beijing Hotel A',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 420',
+      },
+      {
+        image: 'img/package-2.jpg',
+        title: 'Beijing Hotel B',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 390',
+      },
+      {
+        image: 'img/package-3.jpg',
+        title: 'Beijing Hotel C',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 360',
+      },
+    ],
+    Singapore: [
+      {
+        image: 'img/destination-1.jpg',
+        title: 'Heyitang Hotel Shanghai International Tourism Resort  ',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 365',
+      },
+      {
+        image: 'img/destination-2.jpg',
+        title: 'Heyitang Hotel Shanghai International Tourism Resort  ',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 447',
+      },
+      {
+        image: 'img/destination-3.jpg',
+        title: 'Da Zhong Airport Hotel',
+        ratingstar: '⭐⭐⭐⭐⭐',
+        ratingcity : ' 4.7',
+        totalrating : ' /5',
+        review: ' 6166 reviews',
+        price: 'From SAR 310',
+      },
+    ],
+  };
+
+  function showProperties(city, element) {
+    // تحديث المحتوى الديناميكي
+    for (let i = 0; i < 3; i++) {
+      const property = properties[city][i];
+      document.getElementById(`property-${i + 1}`).innerHTML = `
+        <div class="property-card">
+          <div class="property-image">
+            <img src="${property.image}" alt="${property.title}">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">${property.title}</h5>
+            <div class="property-rating">${property.ratingstar}</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >${property.ratingcity}</span><span class ="property-total-rating">${property.totalrating}</span> 
+                </p> ${property.review}  </div>
+            <div class="price">${property.price}</div>
+          </div>
+        </div>
+      `;
+    }
+
+    // ratingcity : ' 4.7',
+    // totalrating : ' /5',
+    // تحديث الحالة النشطة (Active State)
+    const tabs = document.querySelectorAll('.nav-link');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    element.classList.add('active');
+  }
+
+  // Initialize with Shanghai properties
+  showProperties('shanghai', document.getElementById('shanghai-tab'));
