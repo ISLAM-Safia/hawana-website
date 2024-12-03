@@ -588,7 +588,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 365',
+        price: ' SAR 365',
       },
       {
         image: 'img/destination-2.jpg',
@@ -597,7 +597,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 447',
+        price: ' SAR 447',
       },
       {
         image: 'img/destination-3.jpg',
@@ -606,7 +606,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 310',
+        price: ' SAR 310',
       },
     ],
     guangzhou: [
@@ -617,7 +617,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 400',
+        price: ' SAR 400',
       },
       {
         image: 'img/destination-1.jpg',
@@ -626,7 +626,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 350',
+        price: ' SAR 350',
       },
       {
         image: 'img/destination-3.jpg',
@@ -635,7 +635,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 290',
+        price: ' SAR 290',
       },
     ],
     beijing: [
@@ -646,7 +646,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 420',
+        price: ' SAR 420',
       },
       {
         image: 'img/package-2.jpg',
@@ -655,7 +655,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 390',
+        price: ' SAR 390',
       },
       {
         image: 'img/package-3.jpg',
@@ -664,7 +664,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 360',
+        price: ' SAR 360',
       },
     ], 
     Tokyo: [
@@ -675,7 +675,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 365',
+        price: ' SAR 365',
       },
       {
         image: 'img/destination-2.jpg',
@@ -684,7 +684,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 447',
+        price: ' SAR 447',
       },
       {
         image: 'img/destination-3.jpg',
@@ -693,7 +693,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 310',
+        price: ' SAR 310',
       },
     ],
     'Hong Kong': [
@@ -704,7 +704,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 400',
+        price: ' SAR 400',
       },
       {
         image: 'img/destination-1.jpg',
@@ -713,7 +713,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 350',
+        price: ' SAR 350',
       },
       {
         image: 'img/destination-3.jpg',
@@ -722,7 +722,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 290',
+        price: ' SAR 290',
       },
     ],
     Seoul: [
@@ -733,7 +733,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 420',
+        price: ' SAR 420',
       },
       {
         image: 'img/package-2.jpg',
@@ -742,7 +742,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 390',
+        price: ' SAR 390',
       },
       {
         image: 'img/package-3.jpg',
@@ -751,7 +751,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 360',
+        price: ' SAR 360',
       },
     ],
     Singapore: [
@@ -762,7 +762,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 365',
+        price: ' SAR 365',
       },
       {
         image: 'img/destination-2.jpg',
@@ -771,7 +771,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 447',
+        price: ' SAR 447',
       },
       {
         image: 'img/destination-3.jpg',
@@ -780,7 +780,7 @@ const typed = new Typed('.multiple-text' ,{
         ratingcity : ' 4.7',
         totalrating : ' /5',
         review: ' 6166 reviews',
-        price: 'From SAR 310',
+        price: ' SAR 310',
       },
     ],
   };
@@ -801,7 +801,7 @@ const typed = new Typed('.multiple-text' ,{
                 <p class="property-city-rating"> 
                   <span >${property.ratingcity}</span><span class ="property-total-rating">${property.totalrating}</span> 
                 </p> ${property.review}  </div>
-            <div class="price">${property.price}</div>
+            <div class="price"><span class="from-price">From</span> ${property.price}</div>
           </div>
         </div>
       `;

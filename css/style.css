@@ -901,6 +901,7 @@
     border-radius: 8px;
     overflow: hidden;
     transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
   }
   .city-section-wrapper  .property-card:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -919,7 +920,7 @@
   }
       .city-section-wrapper .price {
     font-weight: bold;
-    color: #007bff;
+    color: #0f294d;
   }
       .city-section-wrapper .nav-tabs {
     border-bottom: none;
@@ -1002,8 +1003,12 @@ margin-top: auto;
     .city-section-wrapper .price {
   /* margin-top: auto;  */
   font-weight: bold;
-  color: #007bff;
+  color: #0f294d;
   align-self: end;
+}
+.city-section-wrapper .price  .from-price {
+    color: #8592a6;
+    font-size: 14px;
 }
     .city-section-wrapper .property-review {
   display: flex;
