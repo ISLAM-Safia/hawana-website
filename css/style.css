@@ -828,7 +828,8 @@
 /*** Footer ***/
 /* #0297dc */
 .project-footer {
-    background-color: var(--sticky-footer-color) ;
+    /* background-color: var(--sticky-footer-color) ; */
+    background: linear-gradient(to right, #003165, #0f294d, #0750a9);
 }
 .payment-footer-img {
     height: 35px;
