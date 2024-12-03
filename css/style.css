@@ -826,9 +826,12 @@
 
 
 /*** Footer ***/
-
+/* #0297dc */
 .project-footer {
     background-color: var(--sticky-footer-color) ;
+}
+.payment-footer-img {
+    height: 35px;
 }
 .project-footer .btn.btn-social {
     margin-right: 5px;
