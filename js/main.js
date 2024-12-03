@@ -790,9 +790,9 @@ const typed = new Typed('.multiple-text' ,{
     for (let i = 0; i < 3; i++) {
       const property = properties[city][i];
       document.getElementById(`property-${i + 1}`).innerHTML = `
-        <div class="property-card">
-          <div class="property-image">
-            <img src="${property.image}" alt="${property.title}">
+        <div class="property-card custom-trasform-wrapper-img">
+          <div class="property-image custom-transform-item-img ">
+            <img src="${property.image}" alt="${property.title}" class="custom-transform-img">
           </div>
           <div class="property-content">
             <h5 class="mb-2 property-city-title">${property.title}</h5>
@@ -810,7 +810,7 @@ const typed = new Typed('.multiple-text' ,{
     // ratingcity : ' 4.7',
     // totalrating : ' /5',
     // تحديث الحالة النشطة (Active State)
-    const tabs = document.querySelectorAll('.nav-link');
+    const tabs = document.querySelectorAll('.city-section-wrapper .nav-link');
     tabs.forEach(tab => tab.classList.remove('active'));
     element.classList.add('active');
   }
