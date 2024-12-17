@@ -703,130 +703,1389 @@
 
 
 <!--  city Section start-->
-    <div class="container py-5 city-section-wrapper">
-        <h2 class="mb-4">Featured Properties</h2>
-        <div class="icon-home-wraper d-flex ">
-          <div class="icon-home">
-              <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6b1200090fx7s7F635.png&quot;);" > </div>
-              <p class=" icon-home-title icon-home-title-1">We Price Match
-                <p>  
-          </div>
-      
-          <div class="icon-home" style="margin: 0 1rem;">
-              <div class="ol-usp-simple-text__icon" style=" background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6o120009gxfriv28B3.png&quot;);" > </div>
-              <p class=" icon-home-title"> Hotel Booking Guarantee<p>  
-          </div>
-      
-          <div class="icon-home">
-              <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS2j120009gxknwsA052.png&quot;);" > </div>
-              <p class=" icon-home-title icon-home-title-1">Hotel Stay Guarantee
-                <p>  
-          </div>
-      
-      
-      
+<div class="container py-5 city-section-wrapper">
+    <h2 class="mb-4">Featured Properties</h2>
+    <div class="icon-home-wraper d-flex ">
+      <div class="icon-home">
+          <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6b1200090fx7s7F635.png&quot;);" > </div>
+          <p class=" icon-home-title icon-home-title-1">We Price Match
+            <p>  
       </div>
-        <ul class="nav nav-tabs mb-4" id="propertyTabs" role="tablist">
-          <li class="nav-item">
-            <button class="nav-link active" id="shanghai-tab" type="button" onclick="showProperties('shanghai', this)">Shanghai</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link" id="guangzhou-tab" type="button" onclick="showProperties('guangzhou', this)">Guangzhou</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link" id="beijing-tab" type="button" onclick="showProperties('beijing', this)">Beijing</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link" id="tokyo-tab" type="button" onclick="showProperties('Tokyo', this)">Tokyo</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link" id="hong-kong-tab" type="button" onclick="showProperties('Hong Kong', this)">Hong Kong</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link" id="seoul-tab" type="button" onclick="showProperties('Seoul', this)">Seoul</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link" id="singapore-tab" type="button" onclick="showProperties('Singapore', this)">Singapore</button>
-          </li>
-        </ul>
-      
-      
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4" id="dynamic-content">
-          <div id="property-1"></div>
-          <div id="property-2"></div>
-          <div id="property-3"></div>
-      
-      
-          <div>
-            <div class=" fixed-property-card fixed-height" >
-                <div class="property-card fixed-property-imgwrapper">
-                    <div class="property-content-fixedimg" >
-                        <h5 class="mt-4">Discover great deals on hotels around the world</h5>
-                        <button class="btn btn-primary "> Read More</button>
-                      </div>
-                </div>
+  
+      <div class="icon-home" style="margin: 0 1rem;">
+          <div class="ol-usp-simple-text__icon" style=" background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6o120009gxfriv28B3.png&quot;);" > </div>
+          <p class=" icon-home-title"> Hotel Booking Guarantee<p>  
+      </div>
+  
+      <div class="icon-home">
+          <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS2j120009gxknwsA052.png&quot;);" > </div>
+          <p class=" icon-home-title icon-home-title-1">Hotel Stay Guarantee
+            <p>  
+      </div>
+  
+  
+  
+  </div>
+  <ul class="nav nav-tabs mb-4" id="hawana-store-tabs" role="tablist">
+      <li class="nav-item">
+        <button class="nav-link active" id="hawana-store-shanghai-tab" type="button" onclick="showProperties('hawana-store-shanghai', this)">Shanghai</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="hawana-store-guangzhou-tab" type="button" onclick="showProperties('hawana-store-guangzhou', this)">Guangzhou</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="hawana-store-beijing-tab" type="button" onclick="showProperties('hawana-store-beijing', this)">Beijing</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="hawana-store-tokyo-tab" type="button" onclick="showProperties('hawana-store-tokyo', this)">Tokyo</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="hawana-store-hongkong-tab" type="button" onclick="showProperties('hawana-store-hongkong', this)">Hong Kong</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="hawana-store-seoul-tab" type="button" onclick="showProperties('hawana-store-seoul', this)">Seoul</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="hawana-store-singapore-tab" type="button" onclick="showProperties('hawana-store-singapore', this)">Singapore</button>
+      </li>
+  </ul>
+    
+  
+    <div id="hawana-store-shanghai" class="city-content hawana-store-content active row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+  
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+              <img src="img/destination-1.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+              </div>
+          </div>
+      </div>
+        <div>
+          <div class="property-card">
+              <div class="property-image">
+              <img src="img/destination-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+              </div>
+          </div>
+      </div>
+        <div>
+          <div class="property-card">
+              <div class="property-image">
+              <img src="img/destination-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+              </div>
+          </div>
+      </div>
+        <div>
+          <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+            <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+              <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+              <button class="btn btn-primary mt-2">Go Now</button>
             </div>
           </div>
         </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-      
-        <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4" id="dynamic-content">
-          <div id="property-1"></div>
-          <div id="property-2"></div>
-          <div id="property-3"></div>
-          <div>
-            <div class="property-card" style="      position: relative;
-            height: 300px; /* ارتفاع القسم */
-            background: url('img/bg-hero.jpg') no-repeat center center/cover; /* الصورة كخلفية تغطي القسم */
-            border-radius: 8px;
-            overflow: hidden; ">
-      
-              <div class="property-content" style="   
-          background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5);
-                  position: absolute;
-                  bottom: 0;
-              color: white;
-              text-align: center;z-index: 100; 
-              display: flex;
-              flex-direction: column;">
-                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
-                <button class="btn btn-primary mt-2 ">Go Now</button>
+    </div>
+  
+    <div id="hawana-store-guangzhou" class="city-content  hawana-store-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-1.jpg" alt="destination">
               </div>
-      
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-2.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+  
+        <div>
+          <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+            <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+              <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+              <button class="btn btn-primary mt-2">Go Now</button>
             </div>
           </div>
-        </div> -->
+        </div>
+    </div>
+  
+    <div id="hawana-store-beijing" class="city-content  hawana-store-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 ">
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/destination-1.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
       </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/destination-2.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+      <div>
+            
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/destination-3.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+  
+  
+        <div>
+          <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+            <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+              <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+              <button class="btn btn-primary mt-2">Go Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="hawana-store-tokyo" class="city-content  hawana-store-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+      <div>
+      <div class="property-card">
+          <div class="property-image">
+            <img src="img/destination-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  grdgrgg </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/destination-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+        <div>
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/destination-3.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+        <div>
+          <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+            <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+              <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+              <button class="btn btn-primary mt-2">Go Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="hawana-store-hongkong" class="city-content  hawana-store-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+      <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+  
+  
+        <div>
+          <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+            <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+              <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+              <button class="btn btn-primary mt-2">Go Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="hawana-store-seoul" class="city-content  hawana-store-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-1.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+      <div>
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+  
+  
+        <div>
+          <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+            <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+              <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+              <button class="btn btn-primary mt-2">Go Now</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <div id="hawana-store-singapore" class="city-content  hawana-store-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/destination-2.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-1.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+  
+        <div>
+          <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+            <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+              <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+              <button class="btn btn-primary mt-2">Go Now</button>
+            </div>
+          </div>
+        </div>
+    </div> 
+  
+  
+  </div>
+  
+  
+  <div class="container py-5 city-section-wrapper">
+      <h2 class="mb-4">Deals Section</h2>
+      <div class="icon-home-wraper d-flex ">
+        <div class="icon-home">
+            <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6b1200090fx7s7F635.png&quot;);" > </div>
+            <p class=" icon-home-title icon-home-title-1">We Price Match
+              <p>  
+        </div>
+    
+        <div class="icon-home" style="margin: 0 1rem;">
+            <div class="ol-usp-simple-text__icon" style=" background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6o120009gxfriv28B3.png&quot;);" > </div>
+            <p class=" icon-home-title"> Hotel Booking Guarantee<p>  
+        </div>
+    
+        <div class="icon-home">
+            <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS2j120009gxknwsA052.png&quot;);" > </div>
+            <p class=" icon-home-title icon-home-title-1">Hotel Stay Guarantee
+              <p>  
+        </div>
+    
+    
+    
+    </div>
+      <!-- Tabs -->
+      <ul class="nav nav-tabs mb-4" id="deals-tabs" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link active" id="deals-cairo-tab" type="button" onclick="showDeals('deals-cairo', this)">Cairo</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="deals-dubai-tab" type="button" onclick="showDeals('deals-dubai', this)">Dubai</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="deals-istanbul-tab" type="button" onclick="showDeals('deals-istanbul', this)">Istanbul</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="deals-paris-tab" type="button" onclick="showDeals('deals-paris', this)">Paris</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="deals-london-tab" type="button" onclick="showDeals('deals-london', this)">London</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="deals-rome-tab" type="button" onclick="showDeals('deals-rome', this)">Rome</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="deals-ny-tab" type="button" onclick="showDeals('deals-ny', this)">New York</button>
+        </li>
+      </ul>
+    
+      <!-- Content -->
+      <div id="deals-cairo" class="city-content deals-content  active row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+          <div>
+              <div class="property-card">
+                  <div class="property-image">
+                    <img src="img/destination-2.jpg" alt="destination">
+                  </div>
+                  <div class="property-content">
+                    <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                    <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="property-review"> 
+                        <p class="property-city-rating"> 
+                          <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                        </p> 6166 reviews </div>
+                    <div class="price">From SAR 365</div>
+                  </div>
+                </div>
+          </div>
+          <div>
+              <div class="property-card">
+                  <div class="property-image">
+                    <img src="img/package-1.jpg" alt="destination">
+                  </div>
+                  <div class="property-content">
+                    <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                    <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="property-review"> 
+                        <p class="property-city-rating"> 
+                          <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                        </p> 6166 reviews </div>
+                    <div class="price">From SAR 365</div>
+                  </div>
+                </div>
+          </div>
+          <div>
+              <div class="property-card">
+                  <div class="property-image">
+                    <img src="img/package-3.jpg" alt="destination">
+                  </div>
+                  <div class="property-content">
+                    <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                    <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="property-review"> 
+                        <p class="property-city-rating"> 
+                          <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                        </p> 6166 reviews </div>
+                    <div class="price">From SAR 365</div>
+                  </div>
+                </div>
+          </div>
+      
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+    
+      <div id="deals-dubai" class="city-content deals-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+          <div>  
+              <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-1.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div></div>
+        <div>    
+          <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-2.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div id="deals-istanbul" class="city-content deals-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+          <div>  
+              <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-1.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div></div>
+        <div>    
+          <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-2.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div id="deals-paris" class="city-content deals-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+          <div>  
+              <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-1.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div></div>
+        <div>    
+          <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-2.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div id="deals-london" class="city-content deals-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+          <div>  
+              <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-1.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div></div>
+        <div>    
+          <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-2.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div id="deals-rome" class="city-content deals-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+          <div>
+              <div class="property-card">
+                  <div class="property-image">
+                    <img src="img/destination-2.jpg" alt="destination">
+                  </div>
+                  <div class="property-content">
+                    <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                    <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="property-review"> 
+                        <p class="property-city-rating"> 
+                          <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                        </p> 6166 reviews </div>
+                    <div class="price">From SAR 365</div>
+                  </div>
+                </div>
+          </div>
+          <div>
+              <div class="property-card">
+                  <div class="property-image">
+                    <img src="img/package-1.jpg" alt="destination">
+                  </div>
+                  <div class="property-content">
+                    <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                    <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="property-review"> 
+                        <p class="property-city-rating"> 
+                          <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                        </p> 6166 reviews </div>
+                    <div class="price">From SAR 365</div>
+                  </div>
+                </div>
+          </div>
+          <div>
+              <div class="property-card">
+                  <div class="property-image">
+                    <img src="img/package-3.jpg" alt="destination">
+                  </div>
+                  <div class="property-content">
+                    <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                    <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="property-review"> 
+                        <p class="property-city-rating"> 
+                          <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                        </p> 6166 reviews </div>
+                    <div class="price">From SAR 365</div>
+                  </div>
+                </div>
+          </div>
+      
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div id="deals-ny" class="city-content deals-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+          <div>  
+              <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-1.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div></div>
+        <div>    
+          <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-2.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <!-- باقي المدن على نفس النمط -->
+    </div>
+  
+    <div class="container py-5 city-section-wrapper">
+      <h2 class="mb-4">Hawana Programs</h2>
+      <div class="icon-home-wraper d-flex ">
+        <div class="icon-home">
+            <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6b1200090fx7s7F635.png&quot;);" > </div>
+            <p class=" icon-home-title icon-home-title-1">We Price Match
+              <p>  
+        </div>
+    
+        <div class="icon-home" style="margin: 0 1rem;">
+            <div class="ol-usp-simple-text__icon" style=" background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6o120009gxfriv28B3.png&quot;);" > </div>
+            <p class=" icon-home-title"> Hotel Booking Guarantee<p>  
+        </div>
+    
+        <div class="icon-home">
+            <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS2j120009gxknwsA052.png&quot;);" > </div>
+            <p class=" icon-home-title icon-home-title-1">Hotel Stay Guarantee
+              <p>  
+        </div>
+    
+    
+    
+    </div>
+      <!-- Tabs -->
+      <ul class="nav nav-tabs mb-4" id="hawana-programs-tabs" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link active" id="hawana-programs-cairo-tab" type="button" onclick="showPrograms('hawana-programs-cairo', this)">Cairo</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="hawana-programs-dubai-tab" type="button" onclick="showPrograms('hawana-programs-dubai', this)">Dubai</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="hawana-programs-istanbul-tab" type="button" onclick="showPrograms('hawana-programs-istanbul', this)">Istanbul</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="hawana-programs-paris-tab" type="button" onclick="showPrograms('hawana-programs-paris', this)">Paris</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="hawana-programs-london-tab" type="button" onclick="showPrograms('hawana-programs-london', this)">London</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="hawana-programs-rome-tab" type="button" onclick="showPrograms('hawana-programs-rome', this)">Rome</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="hawana-programs-ny-tab" type="button" onclick="showPrograms('hawana-programs-ny', this)">New York</button>
+        </li>
+      </ul>
+    
+      <!-- Content -->
+      <div id="hawana-programs-cairo" class="city-content deals-content  active row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+          <div>
+              <div class="property-card">
+                  <div class="property-image">
+                    <img src="img/destination-2.jpg" alt="destination">
+                  </div>
+                  <div class="property-content">
+                    <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                    <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="property-review"> 
+                        <p class="property-city-rating"> 
+                          <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                        </p> 6166 reviews </div>
+                    <div class="price">From SAR 365</div>
+                  </div>
+                </div>
+          </div>
+          <div>
+              <div class="property-card">
+                  <div class="property-image">
+                    <img src="img/package-1.jpg" alt="destination">
+                  </div>
+                  <div class="property-content">
+                    <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                    <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="property-review"> 
+                        <p class="property-city-rating"> 
+                          <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                        </p> 6166 reviews </div>
+                    <div class="price">From SAR 365</div>
+                  </div>
+                </div>
+          </div>
+          <div>
+              <div class="property-card">
+                  <div class="property-image">
+                    <img src="img/package-3.jpg" alt="destination">
+                  </div>
+                  <div class="property-content">
+                    <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                    <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="property-review"> 
+                        <p class="property-city-rating"> 
+                          <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                        </p> 6166 reviews </div>
+                    <div class="price">From SAR 365</div>
+                  </div>
+                </div>
+          </div>
+      
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+    
+      <div id="hawana-programs-dubai" class="city-content hawana-programs-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+          <div>  
+              <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-1.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div></div>
+        <div>    
+          <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-2.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div id="hawana-programs-istanbul" class="city-content hawana-programs-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+          <div>  
+              <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-1.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div></div>
+        <div>    
+          <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-2.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div id="hawana-programs-paris" class="city-content hawana-programs-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+          <div>  
+              <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-1.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div></div>
+        <div>    
+          <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-2.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div id="hawana-programs-london" class="city-content hawana-programs-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+          <div>  
+              <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-1.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div></div>
+        <div>    
+          <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-2.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div id="hawana-programs-rome" class="city-content hawana-programs-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+          <div>
+              <div class="property-card">
+                  <div class="property-image">
+                    <img src="img/destination-2.jpg" alt="destination">
+                  </div>
+                  <div class="property-content">
+                    <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                    <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="property-review"> 
+                        <p class="property-city-rating"> 
+                          <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                        </p> 6166 reviews </div>
+                    <div class="price">From SAR 365</div>
+                  </div>
+                </div>
+          </div>
+          <div>
+              <div class="property-card">
+                  <div class="property-image">
+                    <img src="img/package-1.jpg" alt="destination">
+                  </div>
+                  <div class="property-content">
+                    <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                    <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="property-review"> 
+                        <p class="property-city-rating"> 
+                          <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                        </p> 6166 reviews </div>
+                    <div class="price">From SAR 365</div>
+                  </div>
+                </div>
+          </div>
+          <div>
+              <div class="property-card">
+                  <div class="property-image">
+                    <img src="img/package-3.jpg" alt="destination">
+                  </div>
+                  <div class="property-content">
+                    <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                    <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                    <div class="property-review"> 
+                        <p class="property-city-rating"> 
+                          <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                        </p> 6166 reviews </div>
+                    <div class="price">From SAR 365</div>
+                  </div>
+                </div>
+          </div>
+      
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div id="hawana-programs-ny" class="city-content hawana-programs-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+          <div>  
+              <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-1.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div></div>
+        <div>    
+          <div class="property-card">
+            <div class="property-image">
+              <img src="img/package-2.jpg" alt="destination">
+            </div>
+            <div class="property-content">
+              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+              <div class="property-rating">⭐⭐⭐⭐⭐</div>
+              <div class="property-review"> 
+                  <p class="property-city-rating"> 
+                    <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                  </p> 6166 reviews </div>
+              <div class="price">From SAR 365</div>
+            </div>
+          </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+            <div>
+              <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+                <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                  <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                  <button class="btn btn-primary mt-2">Go Now</button>
+                </div>
+              </div>
+            </div>
+      </div>
+      <!-- باقي المدن على نفس النمط -->
+    </div>
+  
     
 <!--  City Section End-->
 
@@ -877,6 +2136,1375 @@
     </div>
     <!-- Destination Start -->
 
+
+<!--  city Section start-->
+<div class="container py-5 city-section-wrapper">
+    <h2 class="mb-4">Medical Tourism</h2>
+    <div class="icon-home-wraper d-flex ">
+      <div class="icon-home">
+          <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6b1200090fx7s7F635.png&quot;);" > </div>
+          <p class=" icon-home-title icon-home-title-1">We Price Match
+            <p>  
+      </div>
+  
+      <div class="icon-home" style="margin: 0 1rem;">
+          <div class="ol-usp-simple-text__icon" style=" background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6o120009gxfriv28B3.png&quot;);" > </div>
+          <p class=" icon-home-title"> Hotel Booking Guarantee<p>  
+      </div>
+  
+      <div class="icon-home">
+          <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS2j120009gxknwsA052.png&quot;);" > </div>
+          <p class=" icon-home-title icon-home-title-1">Hotel Stay Guarantee
+            <p>  
+      </div>
+  
+  
+  
+  </div>
+    <!-- Tabs -->
+    <ul class="nav nav-tabs mb-4" id="medical-tourism-tabs" role="tablist">
+      <li class="nav-item">
+        <button class="nav-link active" id="medical-tourism-cairo-tab" type="button" onclick="showMedical('medical-tourism-cairo', this)">Cairo</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="medical-tourism-dubai-tab" type="button" onclick="showMedical('medical-tourism-dubai', this)">Dubai</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="medical-tourism-istanbul-tab" type="button" onclick="showMedical('medical-tourism-istanbul', this)">Istanbul</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="medical-tourism-paris-tab" type="button" onclick="showMedical('medical-tourism-paris', this)">Paris</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="medical-tourism-london-tab" type="button" onclick="showMedical('medical-tourism-london', this)">London</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="medical-tourism-rome-tab" type="button" onclick="showMedical('medical-tourism-rome', this)">Rome</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="medical-tourism-ny-tab" type="button" onclick="showMedical('medical-tourism-ny', this)">New York</button>
+      </li>
+    </ul>
+  
+    <!-- Content -->
+    <div id="medical-tourism-cairo" class="city-content medical-tourism-content  active row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/destination-2.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-1.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+    
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+  
+    <div id="medical-tourism-dubai" class="city-content medical-tourism-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="medical-tourism-istanbul" class="city-content medical-tourism-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="medical-tourism-paris" class="city-content medical-tourism-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="medical-tourism-london" class="city-content medical-tourism-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="medical-tourism-rome" class="city-content medical-tourism-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/destination-2.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-1.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+    
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="medical-tourism-ny" class="city-content medical-tourism-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- باقي المدن على نفس النمط -->
+  </div>
+  <div class="container py-5 city-section-wrapper">
+    <h2 class="mb-4">Service Section</h2>
+    <div class="icon-home-wraper d-flex ">
+      <div class="icon-home">
+          <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6b1200090fx7s7F635.png&quot;);" > </div>
+          <p class=" icon-home-title icon-home-title-1">We Price Match
+            <p>  
+      </div>
+  
+      <div class="icon-home" style="margin: 0 1rem;">
+          <div class="ol-usp-simple-text__icon" style=" background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6o120009gxfriv28B3.png&quot;);" > </div>
+          <p class=" icon-home-title"> Hotel Booking Guarantee<p>  
+      </div>
+  
+      <div class="icon-home">
+          <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS2j120009gxknwsA052.png&quot;);" > </div>
+          <p class=" icon-home-title icon-home-title-1">Hotel Stay Guarantee
+            <p>  
+      </div>
+  
+  
+  
+  </div>
+    <!-- Tabs -->
+    <ul class="nav nav-tabs mb-4" id="service-section-type-tabs" role="tablist">
+      <li class="nav-item">
+        <button class="nav-link active" id="service-section-type-cairo-tab" type="button" onclick="showServices('service-section-type-cairo', this)">Cairo</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="service-section-type-dubai-tab" type="button" onclick="showServices('service-section-type-dubai', this)">Dubai</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="service-section-type-istanbul-tab" type="button" onclick="showServices('service-section-type-istanbul', this)">Istanbul</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="service-section-type-paris-tab" type="button" onclick="showServices('service-section-type-paris', this)">Paris</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="service-section-type-london-tab" type="button" onclick="showServices('service-section-type-london', this)">London</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="service-section-type-rome-tab" type="button" onclick="showServices('service-section-type-rome', this)">Rome</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="service-section-type-ny-tab" type="button" onclick="showServices('service-section-type-ny', this)">New York</button>
+      </li>
+    </ul>
+  
+    <!-- Content -->
+    <div id="service-section-type-cairo" class="city-content service-section-type-content  active row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/destination-2.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-1.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+    
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+  
+    <div id="service-section-type-dubai" class="city-content service-section-type-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="service-section-type-istanbul" class="city-content service-section-type-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="service-section-type-paris" class="city-content service-section-type-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="service-section-type-london" class="city-content service-section-type-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="service-section-type-rome" class="city-content service-section-type-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/destination-2.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-1.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+    
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="service-section-type-ny" class="city-content service-section-type-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- باقي المدن على نفس النمط -->
+  </div>
+  <div class="container py-5 city-section-wrapper">
+    <h2 class="mb-4">Safari Trips</h2>
+    <div class="icon-home-wraper d-flex ">
+      <div class="icon-home">
+          <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6b1200090fx7s7F635.png&quot;);" > </div>
+          <p class=" icon-home-title icon-home-title-1">We Price Match
+            <p>  
+      </div>
+  
+      <div class="icon-home" style="margin: 0 1rem;">
+          <div class="ol-usp-simple-text__icon" style=" background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS6o120009gxfriv28B3.png&quot;);" > </div>
+          <p class=" icon-home-title"> Hotel Booking Guarantee<p>  
+      </div>
+  
+      <div class="icon-home">
+          <div class="first-icon-home ol-usp-simple-text__icon" style="background-image: url(&quot;https://ak-d.tripcdn.com/images/0AS2j120009gxknwsA052.png&quot;);" > </div>
+          <p class=" icon-home-title icon-home-title-1">Hotel Stay Guarantee
+            <p>  
+      </div>
+  
+  
+  
+  </div>
+    <!-- Tabs -->
+    <ul class="nav nav-tabs mb-4" id="safari-trips-tabs" role="tablist">
+      <li class="nav-item">
+        <button class="nav-link active" id="safari-trips-cairo-tab" type="button" onclick="showSafari('safari-trips-cairo', this)">Cairo</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="safari-trips-dubai-tab" type="button" onclick="showSafari('safari-trips-dubai', this)">Dubai</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="safari-trips-istanbul-tab" type="button" onclick="showSafari('safari-trips-istanbul', this)">Istanbul</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="safari-trips-paris-tab" type="button" onclick="showSafari('safari-trips-paris', this)">Paris</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="safari-trips-london-tab" type="button" onclick="showSafari('safari-trips-london', this)">London</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="safari-trips-rome-tab" type="button" onclick="showSafari('safari-trips-rome', this)">Rome</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="safari-trips-ny-tab" type="button" onclick="showSafari('safari-trips-ny', this)">New York</button>
+      </li>
+    </ul>
+  
+    <!-- Content -->
+    <div id="safari-trips-cairo" class="city-content safari-trips-content  active row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/destination-2.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-1.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+    
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+  
+    <div id="safari-trips-dubai" class="city-content safari-trips-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="safari-trips-istanbul" class="city-content safari-trips-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="safari-trips-paris" class="city-content safari-trips-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="safari-trips-london" class="city-content safari-trips-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="safari-trips-rome" class="city-content safari-trips-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/destination-2.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-1.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="property-card">
+                <div class="property-image">
+                  <img src="img/package-3.jpg" alt="destination">
+                </div>
+                <div class="property-content">
+                  <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                  <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                  <div class="property-review"> 
+                      <p class="property-city-rating"> 
+                        <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                      </p> 6166 reviews </div>
+                  <div class="price">From SAR 365</div>
+                </div>
+              </div>
+        </div>
+    
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="safari-trips-ny" class="city-content safari-trips-content row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 ">
+        <div>  
+            <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-1.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div></div>
+      <div>    
+        <div class="property-card">
+          <div class="property-image">
+            <img src="img/package-2.jpg" alt="destination">
+          </div>
+          <div class="property-content">
+            <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+            <div class="property-rating">⭐⭐⭐⭐⭐</div>
+            <div class="property-review"> 
+                <p class="property-city-rating"> 
+                  <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                </p> 6166 reviews </div>
+            <div class="price">From SAR 365</div>
+          </div>
+        </div>
+      </div>
+      <div>
+          <div class="property-card">
+              <div class="property-image">
+                <img src="img/package-3.jpg" alt="destination">
+              </div>
+              <div class="property-content">
+                <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+                <div class="property-rating">⭐⭐⭐⭐⭐</div>
+                <div class="property-review"> 
+                    <p class="property-city-rating"> 
+                      <span >4.7</span><span class ="property-total-rating"> /5</span> 
+                    </p> 6166 reviews </div>
+                <div class="price">From SAR 365</div>
+              </div>
+            </div>
+      </div>
+          <div>
+            <div class="property-card fixed-height" style="background: url('img/bg-hero.jpg') no-repeat center center/cover;">
+              <div class="property-content-fixedimg" style="background: linear-gradient(180deg, transparent, #5a9aa5 48px, #5a9aa5); color: white; padding: 20px; text-align: center; flex-grow: 0;">
+                <h5 class="mb-2">Discover great deals on hotels around the world</h5>
+                <button class="btn btn-primary mt-2">Go Now</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- باقي المدن على نفس النمط -->
+  </div>
+
+  <!--  City Section End-->
 
     <!-- Package Start -->
     <div class="container-xxl py-5">

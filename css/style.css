@@ -1102,3 +1102,11 @@ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAMAAABlAp
     width: 100%;
     color: var(--text-title-color)
 }
+
+.city-content {
+    display: none; /* إخفاء جميع أقسام المدن */
+  }
+  
+  .city-content.active {
+    display: flex; /* إظهار القسم النشط */
+  }

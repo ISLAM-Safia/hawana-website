@@ -578,242 +578,86 @@ const typed = new Typed('.multiple-text' ,{
     loop : true
   });
 
-  // //////////////////////////////
-  const properties = {
-    shanghai: [
-      {
-        image: 'img/destination-1.jpg',
-        title: 'Heyitang Hotel Shanghai International Tourism Resort  ',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 365',
-      },
-      {
-        image: 'img/destination-2.jpg',
-        title: 'Heyitang Hotel Shanghai International Tourism Resort  ',
-        ratingstar: '⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 447',
-      },
-      {
-        image: 'img/destination-3.jpg',
-        title: 'Yitel Premium (Shanghai peoples Square Nanjing Road Pedestrian Street shop)',
-        ratingstar: '⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 310',
-      },
-    ],
-    guangzhou: [
-      {
-        image: 'img/destination-1.jpg',
-        title: 'Guangzhou Hotel A',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 400',
-      },
-      {
-        image: 'img/destination-1.jpg',
-        title: 'Guangzhou Hotel B',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 350',
-      },
-      {
-        image: 'img/destination-3.jpg',
-        title: 'Guangzhou Hotel C',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 290',
-      },
-    ],
-    beijing: [
-      {
-        image: 'img/package-1.jpg',
-        title: 'Beijing Hotel A',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 420',
-      },
-      {
-        image: 'img/package-2.jpg',
-        title: 'Beijing Hotel B',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 390',
-      },
-      {
-        image: 'img/package-3.jpg',
-        title: 'Beijing Hotel C',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 360',
-      },
-    ], 
-    Tokyo: [
-      {
-        image: 'img/destination-1.jpg',
-        title: 'Heyitang Hotel Shanghai International Tourism Resort  ',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 365',
-      },
-      {
-        image: 'img/destination-2.jpg',
-        title: 'Heyitang Hotel Shanghai International Tourism Resort  ',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 447',
-      },
-      {
-        image: 'img/destination-3.jpg',
-        title: 'Yitel Premium (Shanghai peoples Square Nanjing Road Pedestrian Street shop)',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 310',
-      },
-    ],
-    'Hong Kong': [
-      {
-        image: 'img/destination-1.jpg',
-        title: 'Guangzhou Hotel A',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 400',
-      },
-      {
-        image: 'img/destination-1.jpg',
-        title: 'Guangzhou Hotel B',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 350',
-      },
-      {
-        image: 'img/destination-3.jpg',
-        title: 'Guangzhou Hotel C',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 290',
-      },
-    ],
-    Seoul: [
-      {
-        image: 'img/package-1.jpg',
-        title: 'Beijing Hotel A',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 420',
-      },
-      {
-        image: 'img/package-2.jpg',
-        title: 'Beijing Hotel B',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 390',
-      },
-      {
-        image: 'img/package-3.jpg',
-        title: 'Beijing Hotel C',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 360',
-      },
-    ],
-    Singapore: [
-      {
-        image: 'img/destination-1.jpg',
-        title: 'Heyitang Hotel Shanghai International Tourism Resort  ',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 365',
-      },
-      {
-        image: 'img/destination-2.jpg',
-        title: 'Heyitang Hotel Shanghai International Tourism Resort  ',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 447',
-      },
-      {
-        image: 'img/destination-3.jpg',
-        title: 'Da Zhong Airport Hotel',
-        ratingstar: '⭐⭐⭐⭐⭐',
-        ratingcity : ' 4.7',
-        totalrating : ' /5',
-        review: ' 6166 reviews',
-        price: ' SAR 310',
-      },
-    ],
-  };
 
-  function showProperties(city, element) {
-    // تحديث المحتوى الديناميكي
-    for (let i = 0; i < 3; i++) {
-      const property = properties[city][i];
-      document.getElementById(`property-${i + 1}`).innerHTML = `
-        <div class="property-card custom-trasform-wrapper-img">
-          <div class="property-image custom-transform-item-img ">
-            <img src="${property.image}" alt="${property.title}" class="custom-transform-img">
-          </div>
-          <div class="property-content">
-            <h5 class="mb-2 property-city-title">${property.title}</h5>
-            <div class="property-rating">${property.ratingstar}</div>
-            <div class="property-review"> 
-                <p class="property-city-rating"> 
-                  <span >${property.ratingcity}</span><span class ="property-total-rating">${property.totalrating}</span> 
-                </p> ${property.review}  </div>
-            <div class="price"><span class="from-price">From</span> ${property.price}</div>
-          </div>
-        </div>
-      `;
-    }
 
-    // ratingcity : ' 4.7',
-    // totalrating : ' /5',
-    // تحديث الحالة النشطة (Active State)
-    const tabs = document.querySelectorAll('.city-section-wrapper .nav-link');
-    tabs.forEach(tab => tab.classList.remove('active'));
-    element.classList.add('active');
-  }
 
-  // Initialize with Shanghai properties
-  showProperties('shanghai', document.getElementById('shanghai-tab'));
+
+
+
+
+
+
+  // sections 
+
+function showProperties(cityId, element) {
+  const cityContents = document.querySelectorAll('.hawana-store-content');
+  cityContents.forEach(content => content.classList.remove('active'));
+
+  const activeCity = document.getElementById(cityId);
+  if (activeCity) activeCity.classList.add('active');
+
+  const tabs = document.querySelectorAll('#hawana-store-tabs .nav-link');
+  tabs.forEach(tab => tab.classList.remove('active'));
+  element.classList.add('active');
+}
+
+function showDeals(cityId, element) {
+  const cityContents = document.querySelectorAll('.deals-content');
+  cityContents.forEach(content => content.classList.remove('active'));
+
+  const activeCity = document.getElementById(cityId);
+  if (activeCity) activeCity.classList.add('active');
+
+  const tabs = document.querySelectorAll('#deals-tabs .nav-link');
+  tabs.forEach(tab => tab.classList.remove('active'));
+  element.classList.add('active');
+}
+
+function showPrograms(sectionId, element) {
+  const sectionContents = document.querySelectorAll('.hawana-programs-content');
+  sectionContents.forEach(content => content.classList.remove('active'));
+
+  const activeSection = document.getElementById(sectionId);
+  if (activeSection) activeSection.classList.add('active');
+
+  const tabs = document.querySelectorAll('#hawana-programs-tabs .nav-link');
+  tabs.forEach(tab => tab.classList.remove('active'));
+  element.classList.add('active');
+}
+
+
+function showMedical(sectionId, element) {
+  const sectionContents = document.querySelectorAll('.medical-tourism-content');
+  sectionContents.forEach(content => content.classList.remove('active'));
+
+  const activeSection = document.getElementById(sectionId);
+  if (activeSection) activeSection.classList.add('active');
+
+  const tabs = document.querySelectorAll('#medical-tourism-tabs .nav-link');
+  tabs.forEach(tab => tab.classList.remove('active'));
+  element.classList.add('active');
+}
+
+function showServices(sectionId, element) {
+  const sectionContents = document.querySelectorAll('.service-section-type-content');
+  sectionContents.forEach(content => content.classList.remove('active'));
+
+  const activeSection = document.getElementById(sectionId);
+  if (activeSection) activeSection.classList.add('active');
+
+  const tabs = document.querySelectorAll('#service-section-type-tabs .nav-link');
+  tabs.forEach(tab => tab.classList.remove('active'));
+  element.classList.add('active');
+}
+
+function showSafari(sectionId, element) {
+  const sectionContents = document.querySelectorAll('.safari-trips-content');
+  sectionContents.forEach(content => content.classList.remove('active'));
+
+  const activeSection = document.getElementById(sectionId);
+  if (activeSection) activeSection.classList.add('active');
+
+  const tabs = document.querySelectorAll('#safari-trips-tabs .nav-link');
+  tabs.forEach(tab => tab.classList.remove('active'));
+  element.classList.add('active');
+}
