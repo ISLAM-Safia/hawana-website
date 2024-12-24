@@ -400,6 +400,8 @@
 .icon-home {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #f9b24f;
 }
 .ol-usp-simple-text__icon {
     background-size: 100% 100%;
@@ -411,6 +413,7 @@
 .icon-home-title {
     border-bottom: .5px dashed var(--white-text);
     font-size: 15px;
+    color: #070708 !important;
 }
 
 .booking-section-container {
