@@ -358,7 +358,10 @@
     background-position:  center center;
     background-repeat: no-repeat;
     background-size:cover;
-    height: 79vh;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 83vh; 
     border-bottom-left-radius: 20px; 
     border-bottom-right-radius: 20px; 
     overflow: hidden;
@@ -682,7 +685,9 @@
 
 
  /* Offer section Start */
-
+ .offer-section {
+    margin-top: 3rem;
+ }
 .offer-section  .offer-section-item {
     border-radius: 8px;
     }
