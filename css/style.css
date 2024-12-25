@@ -350,7 +350,8 @@
 .hero-header {
 
     /* background-image:  url(../img/5913506115428139965.jpg); */
-    background-image:  url(../img/home-page-test222.jpg);
+    /* background-image:  url(../img/home-page-test222.jpg); */
+    background-image:  url(../img/perfect-last-2.jpg);
     /* background-image:  url(../img/test34343.jpg); */
        /* background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/5913506115428139801.jpg); */
        /* background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)),url(../img/home-page-test222.jpg) ; */
@@ -416,7 +417,7 @@
     width: 20px;
 }
 .icon-home-title {
-    border-bottom: .5px dashed var(--white-text);
+    border-bottom: .5px dashed var(--dark-black-color);
     font-size: 15px;
     color: var(--dark-black-color) !important;
 }
@@ -939,6 +940,7 @@
     overflow: hidden;
     border-radius: 40px;
     box-shadow: 0 10px 15px #ded6cd, 0 4px 6px #007e43;
+    position: relative;
 
   }
   .city-section-wrapper .property-image img {
@@ -947,6 +949,10 @@
     object-fit: cover;
     border-radius: 40px;
 
+  }
+  .city-section-wrapper .property-image::after {
+    content: "";
+    position: absolute;
   }
 
 
@@ -1080,7 +1086,7 @@ margin-top: auto;
   margin-right: 4px;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-shadow: 2px 2px 7px #712eff;
+  /* text-shadow: 2px 2px 7px #712eff; */
   padding: 16px 16px 5px ;
 }
 .property-city-title-name-desc {
