@@ -939,13 +939,17 @@
     overflow: hidden;
     border-radius: 40px;
     box-shadow: 0 10px 15px #ded6cd, 0 4px 6px #007e43;
+
   }
   .city-section-wrapper .property-image img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 40px;
+
   }
+
+
   .city-section-wrapper .property-content {
     /* padding: 16px; */
   }
@@ -1014,6 +1018,8 @@
   flex-direction: column; /* ترتيب العناصر عموديًا */
   justify-content: space-between; /* توزيع المساحات بالتساوي */
   /* height:fit-content ; */
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 
 }
 
@@ -1095,7 +1101,7 @@ margin-top: auto;
     display: flex; /* تفعيل Flexbox */
     justify-content: space-between; /* توزيع العناصر بالتساوي مع وجود مسافة بينهما */
     align-items: center; /* محاذاة العناصر عموديًا */
-    background-color: #fbfbfb; /* خلفية بيضاء */
+    background-color: #f2f2f2; /* خلفية بيضاء */
     /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  */
     padding: 7px 20px 16px;
 }
