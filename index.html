@@ -92,11 +92,10 @@
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0 navbar-home-section">
 
-
         <div class="container-fluid bg-primary py-2  hero-header">
           <div class=" container-xxl   row justify-content-center " style="margin-top: 4rem;">
             <div class="col-lg-12   text-center">
-                <h1 class=" text-white animated slideInDown" style="font-size: 2rem; color: #070708 !important;">Enjoy Your Vacation  </h1>
+                <h1 class=" text-white animated slideInDown" style="font-size: 2rem; color: #070708 !important;text-shadow: 2px 2px 7px #248eff;">Enjoy Your Vacation  </h1>
                 <div class="container text-center " style="padding-right: .75rem !important ;padding-left: .75rem !important;">
                      <div class="icon-home-wraper d-flex justify-content-center">
                         <div class="icon-home " >
@@ -122,7 +121,7 @@
                     </div>
 
                     <div class="  booking-section-container mx-auto">
-                      
+                      <div class="fixed-search-box">
                         <ul class="nav nav-pills booking-tabs mb-3 justify-content-center home-section-ul" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-hotels-tab" data-bs-toggle="pill" data-bs-target="#pills-hotels" type="button" role="tab" >  <i class="fa-solid fa-hotel me-1"></i>Hotels</button>
@@ -143,6 +142,8 @@
                                     <button class="nav-link " id="pills-hotels-tab" data-bs-toggle="pill" data-bs-target="#pills-hotels" type="button" role="tab" >  <i class="fa-solid fa-ship me-1"></i>Cruise</button>
                                 </li>
                         </ul>
+                        </div>
+                        <div class="dynamic-content">
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-hotels" role="tabpanel">
                                 <form class="row g-3">
@@ -208,13 +209,12 @@
                                     </div>
 
                                     <div id="tripTypeText" class="mt-4">
+
                                         <!-- محتوى ديناميكي حسب الاختيار -->
                                         <div id="roundTripContent" class="">
 
-
-
-                                            <div class="container-fluid  rounded-trip no-pdd mt-4">
-                                                <div class="d-flex-custom gap-1">
+                                            <div class="container-xxl  rounded-trip no-pdd mt-4">
+                                                <div class="container-fluid d-flex-custom gap-1">
                                                     <div class="col-md-3 text-start">
                                                         <label for="fromLocation" class="form-label">Leaving from</label>
                                                         <input type="text" class="form-control form-control-focus2" id="fromLocation" placeholder="Hong Kong, All airports">
@@ -252,11 +252,8 @@
                                                     <button type="submit" class="btn btn-search btn-primary d-flex align-items-center gap-1"> <i class="fa-solid fa-magnifying-glass"></i> Search</button>
                                                 </div>
                                             </div>
-                                
-
-
-
                                         </div>
+
                                         <div id="oneWayContent" class=" d-none">
                                             <div class="container-fluid  rounded-trip no-pdd mt-4">
                                                 <div class="container-fluid d-flex-custom gap-1 ">
@@ -464,6 +461,7 @@
                                 <p>Train booking form here...</p>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -474,6 +472,15 @@
 
     </div>
     <!-- Navbar & Hero End -->
+
+
+
+
+
+
+
+
+
 
     <!-- Offer Section Start -->
     <div class="container-xxl offer-section " >
@@ -575,16 +582,33 @@
               <img src="img/destination-1.jpg" alt="destination">
               </div>
               <div class="property-content">
-              <h5 class="mb-2 property-city-title">Heyitang Hotel Shanghai International Tourism Resort  </h5>
-              <div class="property-rating">⭐⭐⭐⭐⭐</div>
-              <div class="property-review"> 
+              <h4 class="mb-2 property-city-title-name">Tokyo  </h4>
+              <h5 class="mb-2 property-city-title-name-desc">Heyitang Hotel Shanghai International Tourism Resort  </h5>
+
+              <div class="info-container">
+                  <div class="info-text">
+                      <p class="location">Tokyo, Japan</p>
+                      <p class="price">
+                          <span class="price-value">$360</span>
+                          <span class="price-info">x 12 interest free</span>
+                      </p>
+                  </div>
+                  <div class="info-button">
+                      <button class="btn btn-see-more">See More</button>
+                  </div>
+              </div>
+              <!-- <div class="property-city-country-name">Tokyo Japan</div> -->
+
+              <!-- <div class="property-review"> 
                   <p class="property-city-rating"> 
                       <span >4.7</span><span class ="property-total-rating"> /5</span> 
-                  </p> 6166 reviews </div>
-              <div class="price">From SAR 365</div>
+                  </p> 6166 reviews </div> -->
               </div>
           </div>
       </div>
+
+
+
         <div>
           <div class="property-card">
               <div class="property-image">

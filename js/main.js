@@ -569,14 +569,14 @@
 
 
 
-const typed = new Typed('.multiple-text' ,{
-  strings : ['Welcome To Our World Hawana ✈️!' , 'Find Your Paradise with Hawana 🚀!',  'Explore the World with Hawana ✈️!' ,'Adventure Awaits with Hawana 🚀!', 'Travel Beyond Limits with Hawana ✈️!' , 'Let Hawana Take You Places 🚀!' ,
-    'Embark on a Global Adventure with Hawana ✈️!'],
-    typeSpeed : 100 ,
-    backSpeed : 100 ,
-    backDelay : 1000 ,
-    loop : true
-  });
+// const typed = new Typed('.multiple-text' ,{
+//   strings : ['Welcome To Our World Hawana ✈️!' , 'Find Your Paradise with Hawana 🚀!',  'Explore the World with Hawana ✈️!' ,'Adventure Awaits with Hawana 🚀!', 'Travel Beyond Limits with Hawana ✈️!' , 'Let Hawana Take You Places 🚀!' ,
+//     'Embark on a Global Adventure with Hawana ✈️!'],
+//     typeSpeed : 100 ,
+//     backSpeed : 100 ,
+//     backDelay : 1000 ,
+//     loop : true
+//   });
 
 
 
@@ -661,3 +661,5 @@ function showSafari(sectionId, element) {
   tabs.forEach(tab => tab.classList.remove('active'));
   element.classList.add('active');
 }
+
+

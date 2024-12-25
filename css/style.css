@@ -14,6 +14,7 @@
     --white-text : #fff;
     --light-bg : #FFE8CF;
     --sticky-footer-color: #023756;
+    --dark-black-color: #070708;
     /* #070708 */
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -361,11 +362,13 @@
     display: flex;
         justify-content: center;
         align-items: center;
+        height: auto;
         min-height: 83vh; 
     border-bottom-left-radius: 20px; 
     border-bottom-right-radius: 20px; 
     overflow: hidden;
     box-shadow:  0 4px 6px -1px rgba(0, 0, 0, .5);
+    transition: all 0.3s ease-in-out;
 }
 
 /* .hero-header {
@@ -415,7 +418,7 @@
 .icon-home-title {
     border-bottom: .5px dashed var(--white-text);
     font-size: 15px;
-    color: #070708 !important;
+    color: var(--dark-black-color) !important;
 }
 
 .booking-section-container {
@@ -429,8 +432,8 @@
     margin-top: 30px;
 }
 .booking-section-container .home-section-ul {
+    position: relative; 
     backdrop-filter: blur(6px);
-    /* background: rgba(15, 41, 77, .8); */
     background: linear-gradient(to right, #003165, #0f294d, #0750a9);
     border-radius: 46px;
     margin-top: -3rem;
@@ -581,6 +584,9 @@
     padding-left: 0;
     margin-left: 0;
     /* justify-content: space-between; */
+    justify-content: flex-start; /* تأكد أن الأعمدة تبدأ من البداية */
+    align-items: flex-start; 
+
 }
 .booking-section-container  .rounded-type {
     border-radius: 10px;
@@ -923,14 +929,22 @@
     overflow: hidden;
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
+    border-radius: 20px !important;
+    border: none;
   }
   .city-section-wrapper  .property-card:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .city-section-wrapper .property-image {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px #ded6cd, 0 4px 6px #007e43;
   }
   .city-section-wrapper .property-image img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 20px;
   }
   .city-section-wrapper .property-content {
     padding: 16px;
@@ -939,10 +953,10 @@
     font-size: 14px;
     color: #f39c12;
   }
-      .city-section-wrapper .price {
+      /* .city-section-wrapper .price {
     font-weight: bold;
     color: #0f294d;
-  }
+  } */
       .city-section-wrapper .nav-tabs {
     border-bottom: none;
   }
@@ -999,6 +1013,7 @@
   display: flex;
   flex-direction: column; /* ترتيب العناصر عموديًا */
   justify-content: space-between; /* توزيع المساحات بالتساوي */
+  height:fit-content ;
 }
 
     .city-section-wrapper .property-image img {
@@ -1012,7 +1027,7 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* توزيع النصوص بالتساوي */
+  /* justify-content: space-between;  */
 }
 
     .city-section-wrapper .property-content h5 {
@@ -1021,23 +1036,22 @@
   .city-section-wrapper .property-content-fixedimg {
 margin-top: auto;
 }
-    .city-section-wrapper .price {
-  /* margin-top: auto;  */
+    /* .city-section-wrapper .price {
   font-weight: bold;
   color: #0f294d;
   align-self: end;
-}
-.city-section-wrapper .price  .from-price {
+} */
+/* .city-section-wrapper .price  .from-price {
     color: #8592a6;
     font-size: 14px;
-}
-    .city-section-wrapper .property-review {
+} */
+    /* .city-section-wrapper .property-review {
   display: flex;
   gap: .5rem;
   color: #00429b;
   font-weight: 700;
   margin-top: .3rem;
-}
+} */
 
    .city-section-wrapper  .property-city-rating {
   background: #00429b;
@@ -1051,15 +1065,90 @@ margin-top: auto;
   font-size: 12px;
   line-height: 1.3;
 }
-.city-section-wrapper .property-city-title {
-  color: #0f294d;
-  font-size: 16px;
+.city-section-wrapper .property-city-title-name {
+  color: var(--dark-black-color);
+  font-size: 20px;
   font-weight: 700;
   line-height: 22px;
   margin-right: 4px;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-shadow: 2px 2px 7px #712eff;
 }
+.property-city-title-name-desc {
+    color: #84848b;
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 500;
+    
+}
+.city-section-wrapper  .property-city-country-name {
+    color: #84848b;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-top: 2rem;
+}
+.info-container {
+    margin-top: 1.4rem;
+    display: flex; /* تفعيل Flexbox */
+    justify-content: space-between; /* توزيع العناصر بالتساوي مع وجود مسافة بينهما */
+    align-items: center; /* محاذاة العناصر عموديًا */
+    background-color: #fbfbfb; /* خلفية بيضاء */
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);  */
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column; /* ترتيب النصوص عموديًا */
+}
+
+.location {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+.price {
+    font-size: 1rem;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* السماح بانتقال النصوص للسطر التالي عند الحاجة */
+    gap: 5px;
+    align-items: baseline; /* محاذاة النصوص عموديًا */
+}
+
+.price-value {
+    font-weight: bold;
+    color: var(--dark-black-color);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.price-info {
+    font-size: 0.7rem;
+    color: #afafed;
+}
+
+.info-button .btn-see-more {
+    /* background: linear-gradient(82deg, #9a96df, #5005cb); */
+    background: linear-gradient(82deg, #8666ff, #7a3bff);
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: none !important;
+}
+
+.info-button .btn-see-more:hover {
+    background: linear-gradient(45deg, #584cdd, #8a6cf5);
+}
+
+
+
+
+
 .city-section-wrapper .icon-home {
   display: flex;
   justify-content: center;
@@ -1125,3 +1214,24 @@ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAMAAABlAp
   .city-content.active {
     display: flex; /* إظهار القسم النشط */
   }
+
+ 
+/* 
+.fixed-search-box {
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    z-index: 10;
+    backdrop-filter: blur(6px);
+    background: linear-gradient(to right, #003165, #0f294d, #0750a9);
+    border-radius: 46px;
+
+}
+
+.dynamic-content {
+    width: 100%;
+    margin-top: 20px;
+    flex-grow: 1; 
+
+} */
