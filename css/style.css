@@ -211,7 +211,11 @@
 
 /*  Topbar Style Start  */
 
+
 /*** Navbar Style Start***/
+.hawana-home-navbar {
+    font-family: "Merienda", serif;
+}
 .hawana-home-navbar .navbar  {
     background: linear-gradient(to right, #003165, #0f294d, #0750a9) !important;
     color: var(--white-text) !important;
@@ -221,16 +225,19 @@
     /* background: linear-gradient(#003165, rgb(247 247 255 / 70%)); */
 }
 .hawana-home-navbar   .navbar-light .navbar-nav .nav-link {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Merienda", serif;
     position: relative;
     margin-right: 15px;
     padding: 20px 0;
     /* color: #FFFFFF !important; */
     color: #fff ;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     outline: none;
     transition: .5s;
+}
+.hawana-home-navbar a {
+    font-family: "Merienda", serif;
 }
 /* background-image: linear-gradient(to right, #24a6bd 0, rgba(255, 107, 48, 0.01) 100%); */
 .hawana-home-navbar   .sticky-top.navbar-light .navbar-nav .nav-link {
