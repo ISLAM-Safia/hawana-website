@@ -725,5 +725,30 @@ const swiper = new Swiper('.services-slider', {
       slidesPerView: 6,
       spaceBetween: 20,
     },
+
+    1200: {
+      slidesPerView: 7,
+      spaceBetween: 20,
+    },
+    // عند الشاشات المتوسطة
+    992: {
+      slidesPerView: 6,
+      spaceBetween: 15,
+    },
+    // عند الشاشات الصغيرة
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 10,
+    },
+    // عند الشاشات الأصغر
+    576: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+    // للهواتف
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 5,
+    },
   },
 });
