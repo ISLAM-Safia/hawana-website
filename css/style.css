@@ -701,7 +701,7 @@
 
  /* Offer section Start */
  .offer-section {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
  }
 .offer-section  .offer-section-item {
     border-radius: 8px;
@@ -1366,6 +1366,7 @@ margin-top: auto;
   /* Main container styling */
 .services-package-hm-section {
     padding: 20px 0;
+    margin: 20px auto 40px !important;
   }
   
   /* Service item styling */
