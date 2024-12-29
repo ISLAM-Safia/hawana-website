@@ -1344,7 +1344,7 @@ margin-top: auto;
 /* أزرار التنقل في السلايدر */
 .services-package-hm-section .swiper-button-next,
 .services-package-hm-section .swiper-button-prev {
-    color: #333;
+    color: var(--text-title-color);
 }
 
 /* النقاط */
