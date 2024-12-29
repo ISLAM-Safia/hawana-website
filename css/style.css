@@ -701,7 +701,7 @@
 
  /* Offer section Start */
  .offer-section {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
  }
 .offer-section  .offer-section-item {
     border-radius: 8px;
@@ -1257,3 +1257,211 @@ margin-top: auto;
     flex-grow: 1; 
 
 } */
+/* Adjust the styles for icons and text */
+
+
+
+/* Main section class */
+/* Main section class */
+.services-package-hm-section {
+    /* padding: 20px 0; */
+    border-bottom: 2px solid rgba(151, 161, 166, 0.3);
+  }
+  
+  /* Right border for each item (except the last one in the row) */
+  .services-package-hm-section .border-right {
+    /* border-right: 1px solid #ddd;  */
+  }
+  
+  /* Styling the service item */
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Fixed height for uniformity */
+    text-align: center;
+  }
+  
+  /* Image styling */
+  .service-img {
+    width: 50px; /* Fixed width for all images */
+    height: 50px; /* Fixed height for all images */
+    margin-bottom: 10px;
+    object-fit: contain; /* Ensures image fits inside the container */
+  }
+  
+  /* Text styling */
+  .service-text {
+    font-size: 14px; /* Uniform font size */
+    color: #333;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Custom grid for 7 columns */
+  @media (min-width: 1200px) {
+    .col-lg-1-7 {
+      flex: 0 0 calc(100% / 7);
+      max-width: calc(100% / 7);
+    }
+  }
+  
+  /* Remove right border for the last item in the row */
+  .services-package-hm-section .row > .col-lg-1-7:last-child {
+    border-right: none;
+  }
+  
+
+  /* Main container styling */
+.services-package-hm-section {
+    padding: 20px 0;
+  }
+  
+  /* Service item styling */
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Icon styling */
+  .service-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .service-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Text styling */
+  .service-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Responsive grid */
+  @media (min-width: 1200px) {
+    .col-lg-1-7 {
+      flex: 0 0 calc(100% / 7);
+      max-width: calc(100% / 7);
+    }
+  }
+  
+
+  /* Main container styling */
+.services-package-hm-section {
+    padding: 20px 0;
+  }
+  
+  /* Service item styling */
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Icon styling */
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .service-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Text styling */
+  .service-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Responsive grid */
+  @media (min-width: 1200px) {
+    .col-lg-1-7 {
+      flex: 0 0 calc(100% / 7);
+      max-width: calc(100% / 7);
+    }
+  }
+  
+
+
+  /* General Section Styling */
+.services-package-hm-section {
+    padding: 20px 0;
+  }
+  
+  .service-item {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 5px; */
+    margin: 0;
+    text-align: center;
+  }
+  .services-package-items {
+    position: relative;
+  }
+  .services-package-items::after {
+    position: absolute;
+    content: "";
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 1px;
+    height: 65%;
+    margin: auto;
+    background: rgba(151, 161, 166, 0.3);
+  }
+  .service-icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 5px;
+  }
+  
+  .service-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .service-text {
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    margin: 0px auto;
+}
+  
