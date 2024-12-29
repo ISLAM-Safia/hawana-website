@@ -663,3 +663,67 @@ function showSafari(sectionId, element) {
 }
 
 
+// ////////////////////////////////
+// $(document).ready(function () {
+//   $('.services-slider').slick({
+//     slidesToShow: 7,
+//     slidesToScroll: 1,
+//     infinite: true,
+//     arrows: true,
+//     dots: false,
+//     responsive: [
+//       {
+//         breakpoint: 1200,
+//         settings: {
+//           slidesToShow: 5,
+//         },
+//       },
+//       {
+//         breakpoint: 992,
+//         settings: {
+//           slidesToShow: 3,
+//         },
+//       },
+//       {
+//         breakpoint: 768,
+//         settings: {
+//           slidesToShow: 2,
+//         },
+//       },
+//       {
+//         breakpoint: 576,
+//         settings: {
+//           slidesToShow: 1,
+//         },
+//       },
+//     ],
+//   });
+// });
+
+const swiper = new Swiper('.services-slider', {
+  slidesPerView: 7,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    // Responsive breakpoints
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 15,
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween: 20,
+    },
+  },
+});
